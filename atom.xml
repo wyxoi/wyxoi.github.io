@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Wyxoi&#39;s Blog</title>
+  <subtitle>OI&#39;s Dream</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2016-03-13T11:01:39.930Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>wyxoi</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2016/03/13/hello-world/"/>
+    <id>http://yoursite.com/2016/03/13/hello-world/</id>
+    <published>2016-03-13T04:55:13.802Z</published>
+    <updated>2016-03-13T11:01:39.930Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
