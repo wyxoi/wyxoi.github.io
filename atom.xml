@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-13T11:01:39.930Z</updated>
+  <updated>2016-03-15T00:08:34.651Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,18 +16,136 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2016/03/13/hello-world/"/>
-    <id>http://yoursite.com/2016/03/13/hello-world/</id>
-    <published>2016-03-13T04:55:13.802Z</published>
-    <updated>2016-03-13T11:01:39.930Z</updated>
+    <title>From 温暖的二月 to 寒冷的三月</title>
+    <link href="http://yoursite.com/2016/03/15/From-%E6%B8%A9%E6%9A%96%E7%9A%84%E4%BA%8C%E6%9C%88-to-%E5%AF%92%E5%86%B7%E7%9A%84%E4%B8%89%E6%9C%88/"/>
+    <id>http://yoursite.com/2016/03/15/From-温暖的二月-to-寒冷的三月/</id>
+    <published>2016-03-14T23:40:34.000Z</published>
+    <updated>2016-03-15T00:08:34.651Z</updated>
     
-    <content type="html"></content>
+    <content type="html">&lt;p&gt;其实这个标题和内容并没有任何关系，我只是不知到应该取一个什么样子的题目而已。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;然而今年的天气我真的忍不住要吐槽一下，尼玛这是一个星期体验四季啊，上上星期一的时候风和日丽，气温一度飙升到30来度，让人感觉夏天都要到了。然后第二天气温瞬间下降，三天后回到零度。&lt;br&gt;&lt;del&gt;这感觉就是刚准备好过暑假然后寒假到了。。&lt;/del&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;好像有点偏题了，诶我这篇博文主题是什么来着&lt;em&gt;(:з」∠)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;好吧既然是$From$二月，那先回忆一下我二月底到三月初都干了些什么逗比的事情。。。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;在笔记本上装了Ubuntu，然后就入坑了，开始乱搞我的系统，感觉我已经深深爱上了Ubuntu，要不是这里装不上hexo我才不回windows呢。。&lt;/li&gt;
+&lt;li&gt;学习了一下gdb调试，感觉用gdb调代码还是比较舒服的，至少不!会!!崩!!!&lt;/li&gt;
+&lt;li&gt;看了一下vim编辑器，这个好像是装逼专用的 &lt;del&gt;好吧都是装逼用的&lt;/del&gt;&lt;/li&gt;
+&lt;li&gt;最近入坑用github提供的支持搭了一个静态博客,不要问我为什么不是动态博客，我太傻了，并不能搞懂数据库什么高端的东西。。&lt;/li&gt;
+&lt;li&gt;为了搭博客看了看html语言和js什么的。。&lt;/li&gt;
+&lt;li&gt;学了用来写文章的MarkDown,感觉MarkDown真的好厉害，语法简单还支持一堆奇怪的东西&lt;/li&gt;
+&lt;li&gt;刷水题刷水题刷水题&lt;/li&gt;
+&lt;li&gt;好像别的奇怪的事情就没了吧&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;感觉我好像干了好多无聊的事情。。&lt;em&gt;(:з」∠)&lt;/em&gt;&lt;br&gt;一直从二月浪到现在也是爽爽哒。。然而再这么下去人生就没有希望了吧。。&lt;em&gt;(:з」∠)&lt;/em&gt;马上也要回去文化课的深渊了&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;简单整理一下吧，在今年省选二试结束前要学完的东西&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;字符串相关的东西（后缀自动机。。反正还有一堆东西）&lt;/li&gt;
+&lt;li&gt;一堆和数学有关的东西&lt;ul&gt;
+&lt;li&gt;FFT&lt;/li&gt;
+&lt;li&gt;高斯消元，拉格朗日插值&lt;/li&gt;
+&lt;li&gt;数论函数，生成函数（原来的皮毛也应该忘的差不多了吧）&lt;/li&gt;
+&lt;li&gt;线性代数&lt;/li&gt;
+&lt;li&gt;单纯形&lt;/li&gt;
+&lt;li&gt;微积分。。。感觉是学不会的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;数据结构一块&lt;ul&gt;
+&lt;li&gt;KD$-$tree&lt;/li&gt;
+&lt;li&gt;主席树好像忘得差不多了吧&lt;/li&gt;
+&lt;li&gt;替罪羊树和SBT有时间去学一下&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;置换群&lt;/li&gt;
+&lt;li&gt;然后再去看看一些国家队论文，补一下冬令营的课件什么的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;还有好多东西不会啊，不能再颓下去了呀&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;三月已经过半了，停课的时间也越来越少了&lt;br&gt;文化课的寒风和$OI$的暴雪夹杂在一起会发生什么呢&lt;br&gt;不要让自己失望啊&lt;/p&gt;
+&lt;h4 id=&quot;有你们的陪伴和-Aimer-的歌声我不会输&quot;&gt;&lt;a href=&quot;#有你们的陪伴和-Aimer-的歌声我不会输&quot; class=&quot;headerlink&quot; title=&quot;有你们的陪伴和$Aimer$的歌声我不会输&quot;&gt;&lt;/a&gt;&lt;strong&gt;有你们的陪伴和$Aimer$的歌声我不会输&lt;/strong&gt;&lt;/h4&gt;</content>
     
     <summary type="html">
     
+      &lt;p&gt;其实这个标题和内容并没有任何关系，我只是不知到应该取一个什么样子的题目而已。&lt;/p&gt;
+    
     </summary>
     
+      <category term="杂文" scheme="http://yoursite.com/categories/%E6%9D%82%E6%96%87/"/>
+    
+    
+      <category term="杂文" scheme="http://yoursite.com/tags/%E6%9D%82%E6%96%87/"/>
+    
+      <category term="总结规划" scheme="http://yoursite.com/tags/%E6%80%BB%E7%BB%93%E8%A7%84%E5%88%92/"/>
+    
+      <category term="不定时发癫" scheme="http://yoursite.com/tags/%E4%B8%8D%E5%AE%9A%E6%97%B6%E5%8F%91%E7%99%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>教练，我要刷水题</title>
+    <link href="http://yoursite.com/2016/03/15/%E6%95%99%E7%BB%83%EF%BC%8C%E6%88%91%E8%A6%81%E5%88%B7%E6%B0%B4%E9%A2%98/"/>
+    <id>http://yoursite.com/2016/03/15/教练，我要刷水题/</id>
+    <published>2016-03-14T23:10:40.000Z</published>
+    <updated>2016-03-15T00:08:13.272Z</updated>
+    
+    <content type="html">&lt;p&gt;听说HAOI有洪水，像我这种蒟蒻最喜欢了，于是最近就开始刷HAOI了。。。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;BZOJ1044-木棍分割&quot;&gt;&lt;a href=&quot;#BZOJ1044-木棍分割&quot; class=&quot;headerlink&quot; title=&quot;BZOJ1044 木棍分割&quot;&gt;&lt;/a&gt;BZOJ1044 木棍分割&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://www.lydsy.com/JudgeOnline/problem.php?id=1044&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;点这里去虐题&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;妈的用MarkDown贴题面真TM蛋碎&lt;br&gt;据说支持内嵌html然后我把html贴上去之前的内容就华丽丽地消失了&lt;em&gt;(:з」∠)&lt;/em&gt;&lt;br&gt;或者说是我这个编辑器的锅吗，我还是选择稳妥的不贴题面了&lt;br&gt;好,停止吐槽&lt;/p&gt;
+&lt;p&gt;说起来这道题原来是我给初三讲课里面的题目&lt;br&gt;原来一直懒得去做，现在趁着刷水一起做了&lt;/p&gt;
+&lt;p&gt;对于第一问，感觉应该可以算是很经典的问题了，二分长度，然后贪心验证就好了&lt;br&gt;然后对于第二问，我们可以很容易地想到一个O(NM)复杂的Dp，用f[i][j]表示前j个木棍分成i段的方案数，然后就可以得到 $$f[i][j]=\Sigma^{k&amp;lt;=i}_{k=0} f[i-1][k] (sum[i]-sum[k]&amp;lt;=len)$$ 我们可以显然的发现，这个是会华丽丽地T掉的。但是我们可以发现对与递增的j，k的位置也是递增的，所以我们可以使用队列优化DP。&lt;br&gt;然后因为空间问题，还要对第一维滚存&lt;br&gt;不过具体的复杂度我并不会证，可能还是不对的。但是至少还是过去了。。&lt;em&gt;(:з」∠)&lt;/em&gt;&lt;br&gt;&lt;del&gt;今天晚上听见初三爷在纠结滚存怎么滚，感觉我的作业是不是太凶残了&lt;/del&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;45&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;cstdio&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;cstring&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;algorithm&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; mod = &lt;span class=&quot;number&quot;&gt;10007&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; N = &lt;span class=&quot;number&quot;&gt;500010&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;std&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a[N],f[&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;][N],sum[N],q[N],tot,n,ans2,m;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; x = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;,f = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,c = getchar();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt; (c&amp;lt;&lt;span class=&quot;string&quot;&gt;&#39;0&#39;&lt;/span&gt; || c&amp;gt;&lt;span class=&quot;string&quot;&gt;&#39;9&#39;&lt;/span&gt;) &amp;#123;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (c==&lt;span class=&quot;string&quot;&gt;&#39;-&#39;&lt;/span&gt;) f = &lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;;c = getchar();&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt; (c&amp;gt;=&lt;span class=&quot;string&quot;&gt;&#39;0&#39;&lt;/span&gt; &amp;amp;&amp;amp; c&amp;lt;=&lt;span class=&quot;string&quot;&gt;&#39;9&#39;&lt;/span&gt;) x = x*&lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;+c-&lt;span class=&quot;string&quot;&gt;&#39;0&#39;&lt;/span&gt;,c = getchar();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; x*f;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Judge&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; x)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; res = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;,s = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i=&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;i&amp;lt;=n;i++) &amp;#123;s+=a[i];&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (s&amp;gt;x) &amp;#123;res++;s = a[i];&amp;#125;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (res&amp;gt;m) &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (a[i]&amp;gt;x) &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	n = read();m = read();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i=&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;i&amp;lt;=n;i++) &amp;#123;a[i] = read();sum[i] = sum[i&lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;]+a[i];&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; l = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;,r = sum[n],Ans = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt; (l&amp;lt;=r) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; mid = (l+r)&amp;gt;&amp;gt;&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (Judge(mid)) &amp;#123;Ans = mid;r = mid&lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; l = mid+&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d &quot;&lt;/span&gt;,Ans);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	f[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;][&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;] = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i=&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;i&amp;lt;=m;i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; pre = i&amp;amp;&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,cur = pre^&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; l = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,r = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;q[&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;] = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;tot = f[cur][&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; j=&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;j&amp;lt;=n;j++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			&lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt; (l&amp;lt;=r &amp;amp;&amp;amp; sum[j]-sum[q[l]]&amp;gt;Ans) tot = (tot-f[cur][q[l++]]+mod)%mod;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			f[pre][j] = tot;q[++r] = j;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			tot = (tot+f[cur][j])%mod;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; j=n&lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;;j;j--) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (sum[n]-sum[j]&amp;gt;Ans) &lt;span class=&quot;keyword&quot;&gt;break&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			ans2 = (ans2+f[pre][j])%mod;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;built_in&quot;&gt;memset&lt;/span&gt;(f[cur],&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;,&lt;span class=&quot;keyword&quot;&gt;sizeof&lt;/span&gt;(f[cur]));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;%d\n&quot;&lt;/span&gt;,ans2);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;hr&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;听说HAOI有洪水，像我这种蒟蒻最喜欢了，于是最近就开始刷HAOI了。。。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="题解" scheme="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="HAOI" scheme="http://yoursite.com/tags/HAOI/"/>
+    
+      <category term="BZOJ" scheme="http://yoursite.com/tags/BZOJ/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2016/03/14/hello-world/"/>
+    <id>http://yoursite.com/2016/03/14/hello-world/</id>
+    <published>2016-03-14T14:43:50.295Z</published>
+    <updated>2016-03-15T00:09:05.869Z</updated>
+    
+    <content type="html">&lt;p&gt;额，第一篇博文写一些什么东西好呢。。。。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;好像并不知道。。&lt;em&gt;(:з」∠)&lt;/em&gt;&lt;br&gt;但是既然都自动生成了Hello World了就要写一点的吧。&lt;/p&gt;
+&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;meta-string&quot;&gt;&amp;lt;cstdio&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;std&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;printf&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;Hello World\n&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;好就这样吧。&lt;br&gt;感觉有点草率。。&lt;del&gt;不过我就是懒癌你管我&lt;/del&gt;&lt;br&gt;原来blog上的文章也不想转过来了&lt;br&gt;&lt;a href=&quot;http://wyxoi.is-programmer.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;点这里回原站&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;额，第一篇博文写一些什么东西好呢。。。。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="杂文" scheme="http://yoursite.com/categories/%E6%9D%82%E6%96%87/"/>
+    
+    
+      <category term="杂文" scheme="http://yoursite.com/tags/%E6%9D%82%E6%96%87/"/>
+    
+      <category term="Hello World" scheme="http://yoursite.com/tags/Hello-World/"/>
     
   </entry>
   
