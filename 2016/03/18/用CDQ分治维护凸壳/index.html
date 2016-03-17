@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <title>用CDQ分治维护凸壳 | Wyxoi&#39;s Blog</title>
+  <!-- Meta data -->
+  <meta name="baidu-site-verification" content="2LODYEoTVw" />
+  <meta name="baidu-site-verification" content="8dbce4b9d39e237dafebd5518b652493"/>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Wyxoi's Blog">
+    <meta name="author" content="wyxoi">
+    <meta name="description" content="OI's Dream" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="Wyxoi&#39;s Blog" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+	
+    <link rel="stylesheet" href="/highlightjs/docco.css" type="text/css">
+    
+    
+
+    <!-- Custom stylesheet, (add custom styles here, always load last) -->
+    <!-- Load our stylesheet for IE8 -->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- Google Webfonts (Monserrat 400/700, Open Sans 400/600) -->
+    <link href='//fonts.useso.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.useso.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
+    <!--[if IE]>
+    <link href='http://fonts.useso.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="atom.xml">
+  
+  
+
+  
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+	<script type="text/javascript" src="http://api.hitokoto.us/rand?uid=4025&encode=js&charset=utf-8"></script>
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            
+        	<li>
+        		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
+            	<ul class="sb-submenu">
+				  	
+				    <li><a href="/categories/题解/HAOI/BZOJ/" class="animsition-link">BZOJ<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/题解/CDQ/" class="animsition-link">CDQ<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/题解/HAOI/" class="animsition-link">HAOI<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/杂文/Hello-World/" class="animsition-link">Hello World<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/杂文/总结规划/不定时发癫/" class="animsition-link">不定时发癫<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/杂文/总结规划/" class="animsition-link">总结规划<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/杂文/" class="animsition-link">杂文<small>(2)</small></a></li>
+				    
+				    <li><a href="/categories/题解/CDQ/笔记/" class="animsition-link">笔记<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/题解/" class="animsition-link">题解<small>(2)</small></a></li>
+				    
+				</ul>
+        	</li>
+			
+            
+            <li>
+                <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                    <li><a href="http://wyxoi.is-programmer.com" class="animsition-link">原站</a></li>
+                    
+                    <li><a href="http://y9052541.is-programmer.com/" class="animsition-link">~辉~</a></li>
+                    
+                    <li><a href="http://skydec.is-programmer.com/" class="animsition-link">Skydec</a></li>
+                    
+                    <li><a href="http://rxdoi.is-programmer.com/" class="animsition-link">RXDoi</a></li>
+                    
+                    <li><a href="http://blog.csdn.net/jiangshibiao/" class="animsition-link">Jabby</a></li>
+                    
+                    <li><a href="http://dream-for-me.blog.163.com/" class="animsition-link">贱贱</a></li>
+                    
+                    <li><a href="http://sqc1999.is-programmer.com/" class="animsition-link">sqc1999</a></li>
+                    
+                    <li><a href="http://qiancl.is-programmer.com/" class="animsition-link">豆豆</a></li>
+                    
+                    <li><a href="http://the-lost-star.blog.163.com/" class="animsition-link">繁星</a></li>
+                    
+                </ul>
+            </li>
+            
+			
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+			<li class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+				<input type="text" class="st-default-search-input" maxlength="20" placeholder="Search" />
+			</li>
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+		</ul>
+		
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width=35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">Wyxoi's Blog</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+                            
+                            
+                            <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+                            
+                            
+                            <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            
+                            <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right"><font color="white">More</font></div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <!-- ============================ Hero Image =========================== -->
+
+        <section id="hero" class="scrollme">
+            <div class="container-fluid element-img" style="background: url(/img/new.jpg) no-repeat center center fixed;background-size: cover">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
+                        <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
+                            <div>
+                            	
+                                <h2><font color="white" size=8><span>Don't let your</span> dreams <span>be dreams.</span></font></h2>
+                                <p></p>
+				    			
+                                <h2></h2>
+                                <p><font color="black"> WELCOME——一只蒟蒻的幻想 </font></p>
+				    			
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // .col-md-12 -->
+                </div>
+                <div class="herofade beige-dk"></div>
+            </div>
+        </section>
+
+        <!-- Height spacing helper -->
+        <div class="heightblock"></div>
+        <!-- // End height spacing helper -->
+
+        <!-- ============================ END Hero Image =========================== -->
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2016-03-17T23:03:43.000Z" itemprop="datePublished">
+          2016-03-18
+      </time>
+    
+    
+    | 
+    <a href='/tags/题解/'>题解</a>,
+    
+    <a href='/tags/CDQ/'>CDQ</a>,
+    
+    <a href='/tags/笔记/'>笔记</a>
+    
+    
+</span>
+                <h1>用CDQ分治维护凸壳</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<p>为什么会想到写这么一篇文章呢。。。<br><del>我怎么知道为什么!!</del><br><a id="more"></a></p>
+<p><embed src="http://music.163.com/style/swf/widget.swf?sid=600799&type=2&auto=0&width=320&height=66" width="340" height="86" allownetworking="all"><br>先从昨天模拟赛的题目开始吧<br>为什么现在的模拟赛里竟然会有ACM World Final的原题，这题以前在讲CDQ分治的时候在课件上看到过。。<br>然后我当时没有好好看。。<em>(:з」∠)</em>。。<br>导致我看到题面的时候的反应就是：<br>哇原题!<br>哇槽被我弃了的原题<em>(:з」∠)</em></p>
+<p>于是考场上的我只能自己YY了…</p>
+<blockquote>
+<p>##Machine Works<br>你是任意性复杂机器公司(Arbitrarily Complex Machines, ACM)的经理,公司使用更加先进的机械设备生产先进的机器。原来的那一台生产机器已经坏了,所以你要去为公司买一台新的生产机器。你的任务是在转型期内尽可能得到更大的收益。在这段时间内,你要买卖机器,并且当机器被 ACM公司拥有的时候,操控这些机器以获取利润。因为空间的限制,ACM 公司在任何时候都只能最多拥有一台机器。在转型期内,有若干台可能卖出的机器。作为先进机器的专家,对于每台机器 M i ,你已经知道了其价格 P i 和可以买入的日期 D i 。注意,如果不在第 D i 天买入机器 M i ,那么别的人也会买走这一台机器,也就是说,以后你将没有机会购买这台机器了。如果 ACM 的钱低于一台机器的价格,那么你显然不可能买到这一台机器。如果你在第 D i 天买入了机器 M i ,那么 ACM 公司可以从第 D i + 1 天开始使用这一台机器。每使用这台机器一天,就可以为公司创造出 G i 美元的收益。你可以决定要在买入之后的某一天,以一定的折扣价卖出这一台机器。收购市场对于每一台机器,都有一个折扣价 R i。你不能在卖出的那一天使用机器,但是你可以在卖出的那一天再买入一台新的。在转型期结束后,ACM 公司会卖掉当前所拥有的机器。你的任务就是最大化转型期间ACM 公司可以得到的收入。<br>【输入格式】<br>输入包含若干组测试用例。每一组测试用例的第一行有 3 个正整数 N,C 和 D。N 是将会卖出的机器的台数(N ≤ 10 5 ),C 是在转型期开始时公司拥有的美元数量(C ≤ 10 9 ),D 是转型期持续的天数(D ≤ 10 9 )。之后的 N 行每一行描述了一台机器的情况。每一行有 4 个正整数 D i , P i , R i 和 G i ,分别表示这台机器卖出的时间,购买这台机器需要的美元数量,卖出这台机器的折扣价和使用这<br>台机器可以得到的利润。这些数字满足 1 ≤ D i ≤ D,1 ≤ R i &lt; P i ≤ 10 9 且 1 ≤ G i ≤ 10 9 。最后一组测试用例后面的一行由 3 个 0 组成,表示输入数据结束。<br>【输出格式】<br>对于每一组测试用例,输出测试用例的编号,之后给出 ACM 公司在第 D + 1 天结束后可以得到的最大数量的美元。请依照下面给出的样例输出。</p>
+</blockquote>
+<p>看到这道题目,很容易的想到了一个O(N^2)的DP,现将所有的机器按照买入时间排序,f[i]表示到第d[i]天时最大的收益,然后可以得到一个显然的方程$$f[i] = max (f[i-1],f[j]-p[j]+r[j]+(d[i]-d[j]-1)*g[j])(f[j]\geq p[j])$$看着这个东西好想可以斜率优化的样子..然后我就开始乱搞这个方程,对与从j和k两个位置的转移,j比k优的条件是$$f[j]-p[j]+r[j]+(d[i]-d[j]-1)*g[j]&gt;=f[k]-p[k]+r[k]+(d[i]-d[k]-1)*g[k]$$这个式子太长了,我们发现其中的一部分只和jk自己有关,设$A[j] = f[j]-p[j]+r[j]-d[j]*g[j]-d[j]$,然后原式就可以化简为$$A[j]+d[i]*g[j]&gt;=A[k]+d[i]*g[k]$$移项后得到$$d[i]&lt;\frac{A[j]-A[k]}{g[j]-g[k]}$$推出来以后感觉很高兴啊,好像直接按照d排序以后斜率优化就好了..<br>然后开始码,码完以后一测样例过了好开心..<br>然后和暴力开始拍…几乎就是秒出错..<em>(:з」∠)</em><br>调了一下数据以后发现…我忽略了g是不单调的..所以除过去以后符号可能会变..然后整个人就哔了狗了…</p>
+<p>然后开始想怎么把这个正确性搞对呢…<br>突然发现!!!<br>这不就是用CDQ吗..<br>将原序列按时间分成两半,然后考虑前半段对后半段的影响的时候,可以把前半段按照g单调排序,然后就按照斜率优化的方法O(N)扫一遍,总的复杂度是O(NlogN)的..</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;cstdio&gt;</span><br><span class="line">#include &lt;cmath&gt;</span><br><span class="line">#include &lt;cstring&gt;</span><br><span class="line">#include &lt;algorithm&gt;</span><br><span class="line">#define ll long long</span><br><span class="line">const ll N = 100100;</span><br><span class="line">using namespace std;</span><br><span class="line">ll read()&#123;</span><br><span class="line">	ll x = 0,f = 1,c = getchar();</span><br><span class="line">	while (c&lt;'0' || c&gt;'9') &#123;if (c=='-') f = -1;c = getchar();&#125;</span><br><span class="line">	while (c&gt;='0' &amp;&amp; c&lt;='9') x = x*10+c-'0',c = getchar();</span><br><span class="line">	return x*f;</span><br><span class="line">&#125;</span><br><span class="line">struct data&#123;ll d,p,r,g;&#125; a[N];</span><br><span class="line">struct node&#123;ll g,A;&#125; q[N],x[N];</span><br><span class="line">ll n,c,d,f[N],sum,t,h,Cas,m;</span><br><span class="line">bool cmp(const data &amp;a,const data &amp;b)&#123;return a.d&lt;b.d;&#125;</span><br><span class="line">bool cmp1(const node &amp;a,const node &amp;b)&#123;if (a.g==b.g) return a.A&lt;b.A;return a.g&lt;b.g;&#125;</span><br><span class="line">double Slp(node j,node k) &#123;return (double)(j.A-k.A)/(k.g-j.g);&#125;</span><br><span class="line">node operator - (const node &amp;a,const node &amp;b) &#123; return (node)&#123;a.g-b.g,a.A-b.A&#125;;&#125;</span><br><span class="line">double Cross(const node &amp;a,const node &amp;b) &#123; return 1.0*a.g*b.A-1.0*a.A*b.g;&#125;</span><br><span class="line">ll work(int i ,node p) &#123;return p.A+p.g*a[i].d;&#125;</span><br><span class="line">void solve(ll l ,ll r)&#123;</span><br><span class="line">	if(l==r)&#123;f[l] = max(f[l-1] , f[l]);return ;&#125;</span><br><span class="line">	int mid = (l+r)/2;</span><br><span class="line">	solve(l, mid);</span><br><span class="line">	sum = t = 0;h = 1;</span><br><span class="line">	for(int i=l;i&lt;=mid;i++) if(f[i]&gt;=a[i].p) q[++sum] = (node)&#123;a[i].g,f[i]-a[i].p+a[i].r-(a[i].d+1)*a[i].g&#125;;</span><br><span class="line">	sort(q+1,q+1+sum,cmp1);</span><br><span class="line">	for(int i=1;i&lt;=sum;i++)&#123;</span><br><span class="line">		while(t&gt;1 &amp;&amp; Cross(x[t]-x[t-1],q[i]-x[t])&gt;=0) t--;</span><br><span class="line">		x[++t] = q[i];</span><br><span class="line">	&#125;</span><br><span class="line">	for(int i=mid+1;i&lt;=r;i++)&#123;</span><br><span class="line">		while(h&lt;t &amp;&amp; work(i,x[h+1])&gt;=work(i,x[h])) h++;</span><br><span class="line">		if (h&lt;=t) f[i] = max(f[i],work(i,x[h]));</span><br><span class="line">	&#125;</span><br><span class="line">	solve(mid+1,r);</span><br><span class="line">&#125;</span><br><span class="line">int main() &#123;</span><br><span class="line">	freopen("works.in","r",stdin);</span><br><span class="line">	freopen("works.out","w",stdout);</span><br><span class="line">	while (~scanf("%d%d%d",&amp;n,&amp;c,&amp;d)) &#123;</span><br><span class="line">		if (n+c+d==0) return 0;Cas++;</span><br><span class="line">		for (int i=1;i&lt;=n;i++) a[i].d = read(),a[i].p = read(),a[i].r = read(),a[i].g = read();</span><br><span class="line">		for (int i=1;i&lt;=n+1;i++) f[i] = 0;</span><br><span class="line">		f[0] = c;a[++n].d = d+1;</span><br><span class="line">		sort(a+1,a+1+n,cmp);</span><br><span class="line">		solve(1,n);</span><br><span class="line">		printf("Case %d: %lld\n",Cas,f[n]);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>打完以后就开始了漫长的调试之路…<br>让我来想一下当时发生了什么:</p>
+<blockquote>
+<p>sort的时候莫名其妙的RE了..后来发现是一个计算函数的锅…只要这个函数被调用..然后下一次排序就会RE..然而这是什么鬼一样的姿势啊..<em>(:з」∠)</em>..,到现在还是不知道到底为什么..<br>在更新后一半答案的时候非常霸气地把mid+1打成了1…<em>(:з」∠)</em>..哇槽什么鬼<br>中间TM还炸了longlong..<em>(:з」∠)</em>…</p>
+</blockquote>
+<p>感觉很高兴啊,然后发现…华丽丽地卡了常数..<em>(:з」∠)</em>..(不过BZOJ上是很很轻松就过了的)<br>想想拿几分也就够了…然后没有去管他…<br>然而…最后FST了…被系统杀了…自信用%d读longlong..<em>(:з」∠)</em>…我是不是第一个用Ubuntu然后被Ubuntu系统杀的..<em>(:з」∠)</em></p>
+<p>直到讲课前我还一直以为CDQ是标算..毕竟如果直接用平衡树动态维护凸壳的常数和CDQ也差不了多少…</p>
+<p>然后讲课的时候说,直接斜率优化然后在栈里面二分就好了…<br>诶什么情况..为什么可以斜率优化…</p>
+<p>然后我又想了一下题面…发现最优策略里面g一定是递增的…<em>(:з」∠)</em><br>哇槽这么显然的性质我竟然现在才发现.<em>(:з」∠)</em>..<br>然后根据这个性质可以直接按照g排序..然后维护一个斜率的单调栈,每次在栈里面二分,然后..这样也是log的..但是这个常数..<em>(:з」∠)</em>不说了..<em>(:з」∠)</em><br>果真智商被虐的好惨</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ll long long</span></span><br><span class="line"><span class="keyword">const</span> ll N = <span class="number">100010</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">struct</span> data&#123;ll d,p,r,g;&#125; a[N];</span><br><span class="line">ll split[N],n,c,d,f[N],ans,top,Cas;</span><br><span class="line">pair &lt;ll,ll&gt; stk[N];</span><br><span class="line"><span class="function">ll <span class="title">read</span><span class="params">()</span></span>&#123;</span><br><span class="line">	ll x = <span class="number">0</span>,f = <span class="number">1</span>,c = getchar();</span><br><span class="line">	<span class="keyword">while</span> (c&lt;<span class="string">'0'</span> || c&gt;<span class="string">'9'</span>) &#123;<span class="keyword">if</span> (c==<span class="string">'-'</span>) f = <span class="number">-1</span>;c = getchar();&#125;</span><br><span class="line">	<span class="keyword">while</span> (c&gt;=<span class="string">'0'</span> &amp;&amp; c&lt;=<span class="string">'9'</span>) x = x*<span class="number">10</span>+c-<span class="string">'0'</span>,c = getchar();</span><br><span class="line">	<span class="keyword">return</span> x*f;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">ll <span class="title">get</span><span class="params">(ll x)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (!top) <span class="keyword">return</span> <span class="number">-1</span>ll&lt;&lt;<span class="number">60</span>;</span><br><span class="line">	ll l = <span class="number">1</span>,r = top<span class="number">-1</span>,res = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">if</span> (x&lt;=split[l]) <span class="keyword">return</span> stk[l].first*x+stk[l].second;</span><br><span class="line">	<span class="keyword">if</span> (x&gt;=split[r]) <span class="keyword">return</span> stk[r+<span class="number">1</span>].first*x+stk[r+<span class="number">1</span>].second;</span><br><span class="line">	<span class="keyword">while</span> (l+<span class="number">1</span>&lt;r)&#123;</span><br><span class="line">		ll mid = (l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span> (split[mid]&lt;x) l = mid;</span><br><span class="line">		<span class="keyword">else</span> r = mid;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> stk[r].first*x+stk[r].second;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(data a,data b)</span></span>&#123;<span class="keyword">return</span> a.g&lt;b.g;&#125;</span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">Cross</span><span class="params">(<span class="keyword">double</span> k1,<span class="keyword">double</span> b1,<span class="keyword">double</span> k2,<span class="keyword">double</span> b2)</span> </span>&#123;<span class="keyword">return</span> (b2-b1)/(k1-k2);&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Add</span><span class="params">(ll k,ll b)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (top &amp;&amp; k==stk[top].first) &#123;</span><br><span class="line">		<span class="keyword">if</span> (b&lt;=stk[top].second) <span class="keyword">return</span>;</span><br><span class="line">		top--;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">while</span> (top&gt;<span class="number">1</span> &amp;&amp; Cross(stk[top<span class="number">-1</span>].first,stk[top<span class="number">-1</span>].second,k,b)&lt;split[top<span class="number">-1</span>]) top--;</span><br><span class="line">	<span class="keyword">if</span> (top) split[top] = Cross(stk[top].first,stk[top].second,k,b);</span><br><span class="line">	stk[++top] = make_pair(k,b);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	freopen(<span class="string">"works.in"</span>,<span class="string">"r"</span>,<span class="built_in">stdin</span>);</span><br><span class="line">	freopen(<span class="string">"works.out"</span>,<span class="string">"w"</span>,<span class="built_in">stdout</span>);</span><br><span class="line">	<span class="keyword">for</span> (;;) &#123;</span><br><span class="line">		n = read();c = read();d = read();</span><br><span class="line">		<span class="keyword">if</span> (n+c+d==<span class="number">0</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (ll i=<span class="number">1</span>;i&lt;=n;i++) a[i].d = read(),a[i].p = read(),a[i].r = read(),a[i].g = read();</span><br><span class="line">		ll ans = c;</span><br><span class="line">		sort(a+<span class="number">1</span>,a+<span class="number">1</span>+n,cmp);top = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (ll i=<span class="number">1</span>;i&lt;=n;i++) &#123;</span><br><span class="line">			f[i] = max(get(a[i].d),c)-a[i].p;</span><br><span class="line">			<span class="keyword">if</span> (f[i]&gt;=<span class="number">0</span>) &#123;</span><br><span class="line">				Add(a[i].g,f[i]+a[i].r-(a[i].d+<span class="number">1</span>)*a[i].g);</span><br><span class="line">				ans = max(ans,f[i]+(d-a[i].d)*a[i].g+a[i].r);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"Case %lld: %lld\n"</span>,++Cas,ans);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<p>下午的时候去做了一下货币交换..感觉差不多的题目就写在一起了..</p>
+<h3 id="1492-NOI2007-货币兑换Cash"><a href="#1492-NOI2007-货币兑换Cash" class="headerlink" title="1492: [NOI2007]货币兑换Cash"></a>1492: [NOI2007]货币兑换Cash</h3><p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=1492" target="_blank" rel="external">点击这里去虐题</a></p>
+<p>这道题是和上面一题一起出现在课件里的…<br>我们先考虑N^2的DP..讲道理这个dp好想并不是很好想….<br>显然的我们可以得到一个性质,每一次兑换货币的时候一定是全部兑换的,不会出现题面中的一部分的情况,所以我们只要知道了其中一种金券的数量就可以计算出另一种金券的数量.设f[i]表示第i天可以获得的最大价值,然后可以得到一个DP方程$$f[i] = max(f[i-1],\frac {f[j]*rate[j]*a[i]+f[j]*b[i]}{rate[j]*a[j]+b[j]})$$,其中$\frac{f[j]*rate[j]}{rate[j]*a[j]+b[j]}$表示第j天最多可以有多少A金券,我们设他为X[j],同样的$Y[j]=\frac{f[j]*rate[j]}{rate[j]*a[j]+b[j]}$,然后我们对上面的方程进行化简.对于两种转移j比k优的条件是$$f[j]*rate[j]*a[i]+f[j]*b[i]&gt;f[k]*rate[k]*a[i]+f[k]*b[i]$$移项后得到$$\frac{f[j]-f[k]}{rate[j]*f[j]-rate[k]*f[k]}&gt;-\frac{a[i]}{b[i]}$$然后就和上一题类似,按照$-\frac{a[i]}{b[i]}$排序,然后用CDQ分治维护凸壳..<br>不过这道题和上一道题有一点区别是,因为是根据$-\frac{a[i]}{b[i]}$排序的所以时间关系是乱的,分治的时候还是要按照时间分治,然后分别保证两端里要单调</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> N 120000</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> eps 1e-9</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> inf 1e9</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">struct</span> query&#123;<span class="keyword">double</span> q,a,b,rate,k;<span class="keyword">int</span> pos;&#125;q[N],nq[N];</span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">fabs</span><span class="params">(<span class="keyword">double</span> x)</span></span>&#123;<span class="keyword">return</span> (x&gt;<span class="number">0</span>)?x:-x;&#125;</span><br><span class="line"><span class="keyword">struct</span> point&#123;</span><br><span class="line">	<span class="keyword">double</span> x,y;</span><br><span class="line">	<span class="keyword">friend</span> <span class="keyword">bool</span> <span class="keyword">operator</span> &lt;(<span class="keyword">const</span> point &amp;a,<span class="keyword">const</span> point &amp;b) &#123;	</span><br><span class="line">		<span class="keyword">return</span> (a.x&lt;b.x+eps)||(<span class="built_in">fabs</span>(a.x-b.x)&lt;=eps&amp;&amp;a.y&lt;b.y+eps);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;p[N],np[N];</span><br><span class="line"><span class="keyword">int</span> st[N]; <span class="keyword">double</span> f[N]; <span class="keyword">int</span> n,m;</span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">getk</span><span class="params">(<span class="keyword">int</span> i,<span class="keyword">int</span> j)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (i==<span class="number">0</span>) <span class="keyword">return</span> -inf;</span><br><span class="line">	<span class="keyword">if</span> (j==<span class="number">0</span>) <span class="keyword">return</span> inf;</span><br><span class="line">	<span class="keyword">if</span> (<span class="built_in">fabs</span>(p[i].x-p[j].x)&lt;=eps) <span class="keyword">return</span> -inf;</span><br><span class="line">	<span class="keyword">return</span> (p[i].y-p[j].y)/(p[i].x-p[j].x);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> l,<span class="keyword">int</span> r)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (l==r)&#123;</span><br><span class="line">		f[l]=max(f[l<span class="number">-1</span>],f[l]);</span><br><span class="line">		p[l].y=f[l]/(q[l].a*q[l].rate+q[l].b);</span><br><span class="line">		p[l].x=p[l].y*q[l].rate;</span><br><span class="line">		<span class="keyword">return</span> ;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">int</span> mid=(l+r)&gt;&gt;<span class="number">1</span>,l1=l,l2=mid+<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=l;i&lt;=r;i++)</span><br><span class="line">		<span class="keyword">if</span> (q[i].pos&lt;=mid) nq[l1++]=q[i];</span><br><span class="line">		<span class="keyword">else</span> nq[l2++]=q[i];</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=l;i&lt;=r;i++) q[i]=nq[i];</span><br><span class="line">	solve(l,mid);</span><br><span class="line">	<span class="keyword">int</span> top=<span class="number">0</span>,j = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=l;i&lt;=mid;i++)&#123;</span><br><span class="line">		<span class="keyword">while</span> (top&gt;=<span class="number">2</span>&amp;&amp;getk(i,st[top])+eps&gt;getk(st[top],st[top<span class="number">-1</span>])) top--;</span><br><span class="line">		st[++top]=i;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=r;i&gt;=mid+<span class="number">1</span>;i--)&#123;</span><br><span class="line">		<span class="keyword">while</span> (j&lt;top&amp;&amp;q[i].k&lt;getk(st[j],st[j+<span class="number">1</span>])+eps) j++;</span><br><span class="line">		f[q[i].pos]=max(f[q[i].pos],p[st[j]].x*q[i].a+p[st[j]].y*q[i].b);</span><br><span class="line">	&#125;</span><br><span class="line">	solve(mid+<span class="number">1</span>,r);</span><br><span class="line">	l1=l,l2=mid+<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=l;i&lt;=r;i++)</span><br><span class="line">		<span class="keyword">if</span> ((p[l1]&lt;p[l2]||l2&gt;r)&amp;&amp;l1&lt;=mid) np[i]=p[l1++];</span><br><span class="line">		<span class="keyword">else</span> np[i]=p[l2++];</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=l;i&lt;=r;i++) p[i]=np[i];</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(query a,query b)</span></span>&#123;<span class="keyword">return</span> a.k&lt;b.k;&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%lf"</span>,&amp;n,&amp;f[<span class="number">0</span>]);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) &#123;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%lf%lf%lf"</span>,&amp;q[i].a,&amp;q[i].b,&amp;q[i].rate);</span><br><span class="line">		q[i].k=-q[i].a/q[i].b;</span><br><span class="line">		q[i].pos=i;</span><br><span class="line">	&#125;</span><br><span class="line">	sort(q+<span class="number">1</span>,q+n+<span class="number">1</span>,cmp);</span><br><span class="line">	solve(<span class="number">1</span>,n);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%.3lf\n"</span>,f[n]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+			<div class="text" style=" text-align:center;">
+				<div class="row">
+					<div id="hitokoto"><font size=3	><script>hitokoto()</script></font></div>
+				<!--    <p>每一个不曾起舞的日子都是对生命的辜负。</p> -->
+				</div>
+			</div>
+        </div>
+        <nav class="pagination" role="pagination">
+    
+    
+    <a class="pull-right" href="/2016/03/15/From-温暖的二月-to-寒冷的三月/">
+        From 温暖的二月 to 寒冷的三月 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+			
+<div class="ds-thread" data-thread-key="2016/03/18/用CDQ分治维护凸壳/" data-title="用CDQ分治维护凸壳" data-url="http://yoursite.com/2016/03/18/用CDQ分治维护凸壳/"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"wyxoi"};
+(function() {
+	var ds = document.createElement('script');
+	ds.type = 'text/javascript';ds.async = true;
+	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	ds.charset = 'UTF-8';
+	(document.getElementsByTagName('head')[0] 
+	 || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+
+		</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By wyxoi. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+  
+  _st('install','d-psXf7Azq34os63dEAz','2.0.0');
+</script>
+	<script type="text/javascript">
+		var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cspan id='cnzz_stat_icon_1257950816'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1257950816%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+</footer>
+
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":["qzone","tsina","weixin","tqq","fbook","copy"],"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"5","bdPos":"left","bdTop":"141.5"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+        
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+    
+    resizeHero();
+    
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+    });
+</script>
+
+
+<!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+</body>
+</html>
