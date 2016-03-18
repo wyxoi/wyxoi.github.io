@@ -125,9 +125,9 @@
 				    
 				    <li><a href="/categories/杂文/" class="animsition-link">杂文<small>(2)</small></a></li>
 				    
-				    <li><a href="/categories/题解/CDQ/笔记/" class="animsition-link">笔记<small>(1)</small></a></li>
-				    
 				    <li><a href="/categories/数论/笔记/" class="animsition-link">笔记<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/题解/CDQ/笔记/" class="animsition-link">笔记<small>(1)</small></a></li>
 				    
 				    <li><a href="/categories/题解/" class="animsition-link">题解<small>(2)</small></a></li>
 				    
@@ -308,7 +308,9 @@
 <p>欧拉筛素数代码<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Getprime</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span> (!vis[i]) prime[++sum] = i;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=sum &amp;&amp; i*prime[j]&lt;=n;j++)&#123;</span><br><span class="line">			vis[i*j] = j;</span><br><span class="line">			<span class="keyword">if</span> (i%prime[j]==<span class="number">0</span>) <span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h3 id="中国剩余定理-CRT"><a href="#中国剩余定理-CRT" class="headerlink" title="中国剩余定理(CRT)"></a>中国剩余定理(CRT)</h3><p>中国剩余定理，用来解决一类一元线性同余方程组<br>一元线性同余方程组问题最早可见于中国南北朝时期（公元5世纪）的数学著作《孙子算经》卷下第二十六题，叫做“物不知数”问题，原文如下：<br>有物不知其数，三三数之剩二，五五数之剩三，七七数之剩二。问物几何？<br>即，一个整数除以三余二，除以五余三，除以七余二，求这个整数。《孙子算经》中首次提到了同余方程组问题，以及以上具体问题的解法，因此在中文数学文献中也会将中国剩余定理称为孙子定理。<br>宋朝数学家秦九韶于1247年《数书九章》卷一、二《大衍类》对“物不知数”问题做出了完整系统的解答。明朝数学家程大位将解法编成易于上口的《孙子歌诀》：三人同行七十希，五树梅花廿一支，七子团圆正半月，除百零五使得知这个歌诀给出了模数为3、5、7时候的同余方程的秦九韶解法。意思是：将除以3得到的余数乘以70，将除以5得到的余数乘以21，将除以7得到的余数乘以15，全部加起来后除以105，得到的余数就是答案。比如说在以上的物不知数问题里面，按歌诀求出的结果就是23.（以上摘自某谋财害命网站）<br>然后把上面乱七八糟的东西整理一下就是求满足<br>\begin{align}<br>x &amp; \equiv a_1(mod\ b_1) \\<br>x &amp; \equiv a_2(mod\ b_2) \\<br>&amp; . \\<br>&amp; . \\<br>x &amp; \equiv a_n(mod\ b_n)<br>\end{align}的最小x的值<br>这个方程是一定存在解的吗？<br>如果$a_1\ mod\ gcd(b_1,b_2)\not=a_2\ mod \ gcd(b_1,b_2)$,那么原方程组没有解<br>对于有解的方程<br>我们设$$M=\prod_{i=1}^{n} b_i$$$$D_i=\frac{M}{b_i}$$对于每一个方程，求出$$D_ix\equiv 1 (mod\ b_i)$$我们用求逆元的方法解出x，并把$D_i\cdot x$记为$X_i$<br>那么$X_i\cdot a_i$对其他所有b模的结果都为0，且对于模$b_i$的结果为$a_i$<br>那么$(\Sigma_{i=1}^{n} X_i\cdot A_i)mod M$就是答案</p>
 <hr>
-<p>未完待续</p>
+<h3 id="组合数"><a href="#组合数" class="headerlink" title="组合数"></a>组合数</h3><p>一些比较常见的性质<br>$$A_{n}^{m}=C_{n}^{m}\cdot m!$$$$C_{n}^{m}=C_{n}^{n-m}$$$$C_{n}^{m}=C_{n-1}^{m}+C_{n-1}^{m-1}$$$$\sum_{i=0}^{n} C_{n}^{i}=2^n$$恩其他的应该没有什么好写的</p>
+<hr>
+<h3 id="Lucas定理，组合数取模"><a href="#Lucas定理，组合数取模" class="headerlink" title="Lucas定理，组合数取模"></a>Lucas定理，组合数取模</h3><p>未完待续</p>
 
             <div class="clearfix"></div>
             <hr class="nogutter">
