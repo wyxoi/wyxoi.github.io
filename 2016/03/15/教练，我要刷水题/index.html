@@ -283,8 +283,7 @@
         <div class="col-md-8 col-md-offset-2">
       		<p>听说HAOI有洪水，像我这种蒟蒻最喜欢了，于是最近就开始刷HAOI了。。。</p>
 <a id="more"></a>
-<hr>
-<h3 id="BZOJ1044-木棍分割"><a href="#BZOJ1044-木棍分割" class="headerlink" title="BZOJ1044 木棍分割"></a>BZOJ1044 木棍分割</h3><p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=1044" target="_blank" rel="external">点这里去虐题</a></p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><embed src="http://music.163.com/style/swf/widget.swf?sid=405998839&type=2&auto=0&width=320&height=66" width="340" height="86" allownetworking="all"></h2><h3 id="BZOJ1044-木棍分割"><a href="#BZOJ1044-木棍分割" class="headerlink" title="BZOJ1044 木棍分割"></a>BZOJ1044 木棍分割</h3><p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=1044" target="_blank" rel="external">点这里去虐题</a></p>
 <p>妈的用MarkDown贴题面真TM蛋碎<br>据说支持内嵌html然后我把html贴上去之前的内容就华丽丽地消失了<em>(:з」∠)</em><br>或者说是我这个编辑器的锅吗，我还是选择稳妥的不贴题面了<br>好,停止吐槽</p>
 <p>说起来这道题原来是我给初三讲课里面的题目<br>原来一直懒得去做，现在趁着刷水一起做了</p>
 <p>对于第一问，感觉应该可以算是很经典的问题了，二分长度，然后贪心验证就好了<br>然后对于第二问，我们可以很容易地想到一个O(NM)复杂的Dp，用f[i][j]表示前j个木棍分成i段的方案数，然后就可以得到 $$f[i][j]=\sum^{k&lt;=j}_{k=0} f[i-1][k] (sum[j]-sum[k]&lt;=len)$$ 我们可以显然的发现，这个是会华丽丽地T掉的。但是我们可以发现对与递增的j，k的位置也是递增的，所以我们可以使用队列优化DP。<br>然后因为空间问题，还要对第一维滚存<br>不过具体的复杂度我并不会证，可能还是不对的。但是至少还是过去了。。<em>(:з」∠)</em><br><del>今天晚上听见初三爷在纠结滚存怎么滚，感觉我的作业是不是太凶残了</del></p>
