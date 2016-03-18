@@ -125,9 +125,9 @@
 				    
 				    <li><a href="/categories/杂文/" class="animsition-link">杂文<small>(2)</small></a></li>
 				    
-				    <li><a href="/categories/数论/笔记/" class="animsition-link">笔记<small>(1)</small></a></li>
-				    
 				    <li><a href="/categories/题解/CDQ/笔记/" class="animsition-link">笔记<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/数论/笔记/" class="animsition-link">笔记<small>(1)</small></a></li>
 				    
 				    <li><a href="/categories/题解/" class="animsition-link">题解<small>(2)</small></a></li>
 				    
@@ -296,7 +296,6 @@
 <li>中国剩余定理</li>
 <li>组合数</li>
 <li>Lucas定理</li>
-<li>关于一些组合数取模的姿势</li>
 </ul>
 <hr>
 <h3 id="逆元"><a href="#逆元" class="headerlink" title="逆元"></a>逆元</h3><p>关于逆元是什么,讲课的时候我给刚才那位当时还是处在茫然状态的初三爷讲了一下,然后结果是他没有听懂.讲道理逆元有这么难吗!!<br>对于$a\cdot b\equiv1(mod\ P)$我们就称b为a在模P域下的逆元,记a的逆元为$a^{-1}$(逆元要在模域下才有意义!!)<br>逆元有什么用呢？对于在模域下的除法$\frac{a}{b}\equiv a\cdot b^{-1}(mod\ P)$<br>怎么求逆元？<br>首先对于在模P域下的a,存在逆元的条件是$gcd(a,P)=1$<br>当a存在逆元时根据欧拉定理可得$a^{-1}\equiv a^{\phi(P)-1}(mod\ P)$<br>然后使用快速幂就可以在log的时间内求出单个元素的逆元了<br>如何快速求1~n所有数的逆元(这里的条件是P为素数)?<br>设$P\div a=q…r$即$P=qx+r$<br>然后可以将其放到模域下<br>\begin{align}<br>P &amp; = qx+r \\<br>0 &amp; \equiv qx+r (mod\ P) \\<br>-r &amp; \equiv qx(mod\ P) \\<br>-rq^{-1} &amp; \equiv x(mod\ P) \\<br>x^{-1} &amp; \equiv -qr^{-1}(mod\ P) \\<br>x^{-1} &amp; \equiv \lfloor\frac{P}{x}\rfloor\cdot (x\ mod\ P)^{-1}(mod\ P)<br>\end{align}<br>然后就可以O(n)递推了</p>
