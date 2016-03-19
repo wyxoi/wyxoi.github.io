@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-19T01:27:29.908Z</updated>
+  <updated>2016-03-19T01:32:32.952Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2016/03/18/%E6%95%B0%E8%AE%BA%E5%85%A5%E9%97%A8%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/"/>
     <id>http://yoursite.com/2016/03/18/数论入门知识整理/</id>
     <published>2016-03-18T06:44:34.000Z</published>
-    <updated>2016-03-19T01:27:29.908Z</updated>
+    <updated>2016-03-19T01:32:32.952Z</updated>
     
     <content type="html">&lt;p&gt;整理一下初等数论的基础知识。。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;embed src=&quot;http://music.163.com/style/swf/widget.swf?sid=528284&amp;type=2&amp;auto=0&amp;width=320&amp;height=66&quot; width=&quot;340&quot; height=&quot;86&quot; allownetworking=&quot;all&quot;&gt;
@@ -44,6 +44,7 @@
 &lt;hr&gt;
 &lt;h3 id=&quot;欧拉筛法&quot;&gt;&lt;a href=&quot;#欧拉筛法&quot; class=&quot;headerlink&quot; title=&quot;欧拉筛法&quot;&gt;&lt;/a&gt;欧拉筛法&lt;/h3&gt;&lt;p&gt;对于筛法我最先知道的是NlogN的倍增筛质数，原来感觉这么一个东西应该就够了。有些题目只能放O(N)过，觉得这个东西越来越没用&lt;del&gt;确实没用&lt;/del&gt;。&lt;br&gt;欧拉筛法是什么呢？&lt;br&gt;欧拉筛法可以用来O(n)的时间里筛大部分（还是全部？并不清楚）积性函数。&lt;br&gt;什么是积性函数？&lt;br&gt;积性函数：任取p，q且$gcd(p,q)=1$，若$f(xy)=f(x)f(y)$，则f是一个积性函数&lt;br&gt;完全积性函数：任取p,q，若$f(pq)=f(p)f(q)$，则f是一个完全积性函数&lt;br&gt;欧拉筛法怎么做呢？&lt;br&gt;从2~n枚举一个数i，然后枚举小于i的质数j。如果j不是i的因子，那么j就是i*j的最小质因子，然后可以计算出f(i*j)的值。当j|i时，j是i的最小质因子，对于之后的所有质数k，i*k的最小质因子都不是k，而是j，所以直接跳出循环。这样我们可以发现每一个数都只被它的最小质因子筛到一次，所以整个算法的复杂度是O(n)的。&lt;/p&gt;
 &lt;p&gt;欧拉筛素数代码&lt;br&gt;&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Getprime&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i=&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;;i&amp;lt;=n;i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (!vis[i]) prime[++sum] = i;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; j=&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;j&amp;lt;=sum &amp;amp;&amp;amp; i*prime[j]&amp;lt;=n;j++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			vis[i*j] = j;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (i%prime[j]==&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;) &lt;span class=&quot;keyword&quot;&gt;break&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;hr&gt;
 &lt;h3 id=&quot;中国剩余定理-CRT&quot;&gt;&lt;a href=&quot;#中国剩余定理-CRT&quot; class=&quot;headerlink&quot; title=&quot;中国剩余定理(CRT)&quot;&gt;&lt;/a&gt;中国剩余定理(CRT)&lt;/h3&gt;&lt;p&gt;中国剩余定理，用来解决一类一元线性同余方程组&lt;br&gt;一元线性同余方程组问题最早可见于中国南北朝时期（公元5世纪）的数学著作《孙子算经》卷下第二十六题，叫做“物不知数”问题，原文如下：&lt;br&gt;有物不知其数，三三数之剩二，五五数之剩三，七七数之剩二。问物几何？&lt;br&gt;即，一个整数除以三余二，除以五余三，除以七余二，求这个整数。《孙子算经》中首次提到了同余方程组问题，以及以上具体问题的解法，因此在中文数学文献中也会将中国剩余定理称为孙子定理。&lt;br&gt;宋朝数学家秦九韶于1247年《数书九章》卷一、二《大衍类》对“物不知数”问题做出了完整系统的解答。明朝数学家程大位将解法编成易于上口的《孙子歌诀》：三人同行七十希，五树梅花廿一支，七子团圆正半月，除百零五使得知这个歌诀给出了模数为3、5、7时候的同余方程的秦九韶解法。意思是：将除以3得到的余数乘以70，将除以5得到的余数乘以21，将除以7得到的余数乘以15，全部加起来后除以105，得到的余数就是答案。比如说在以上的物不知数问题里面，按歌诀求出的结果就是23.（以上摘自某谋财害命网站）&lt;br&gt;然后把上面乱七八糟的东西整理一下就是求满足&lt;br&gt;\begin{align}&lt;br&gt;x &amp;amp; \equiv a_1(mod\ b_1) \\&lt;br&gt;x &amp;amp; \equiv a_2(mod\ b_2) \\&lt;br&gt;&amp;amp; . \\&lt;br&gt;&amp;amp; . \\&lt;br&gt;x &amp;amp; \equiv a_n(mod\ b_n)&lt;br&gt;\end{align}的最小x的值&lt;br&gt;这个方程是一定存在解的吗？&lt;br&gt;如果$a_1\ mod\ gcd(b_1,b_2)\not=a_2\ mod \ gcd(b_1,b_2)$,那么原方程组没有解&lt;br&gt;对于有解的方程&lt;br&gt;我们设$$M=\prod_{i=1}^{n} b_i$$$$D_i=\frac{M}{b_i}$$对于每一个方程，求出$$D_ix\equiv 1 (mod\ b_i)$$我们用求逆元的方法解出x，并把$D_i\cdot x$记为$X_i$&lt;br&gt;那么$X_i\cdot a_i$对其他所有b模的结果都为0，且对于模$b_i$的结果为$a_i$&lt;br&gt;那么$(\Sigma_{i=1}^{n} X_i\cdot A_i)mod M$就是答案&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&quot;组合数&quot;&gt;&lt;a href=&quot;#组合数&quot; class=&quot;headerlink&quot; title=&quot;组合数&quot;&gt;&lt;/a&gt;组合数&lt;/h3&gt;&lt;p&gt;一些比较常见的性质&lt;br&gt;$$A_{n}^{m}=C_{n}^{m}\cdot m!$$$$C_{n}^{m}=C_{n}^{n-m}$$$$C_{n}^{m}=C_{n-1}^{m}+C_{n-1}^{m-1}$$$$\sum_{i=0}^{n} C_{n}^{i}=2^n$$恩其他的应该没有什么好写的&lt;/p&gt;
@@ -115,9 +116,9 @@
       <category term="笔记" scheme="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/CDQ/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="笔记" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AE%B0/"/>
-    
       <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="笔记" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AE%B0/"/>
     
       <category term="CDQ" scheme="http://yoursite.com/tags/CDQ/"/>
     
