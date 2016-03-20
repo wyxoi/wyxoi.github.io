@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-20T03:24:36.294Z</updated>
+  <updated>2016-03-20T12:17:31.566Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>又到一年省选季</title>
+    <link href="http://yoursite.com/2016/03/20/%E5%8F%88%E5%88%B0%E4%B8%80%E5%B9%B4%E7%9C%81%E9%80%89%E5%AD%A3/"/>
+    <id>http://yoursite.com/2016/03/20/又到一年省选季/</id>
+    <published>2016-03-20T12:03:27.000Z</published>
+    <updated>2016-03-20T12:17:31.566Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Day-1&quot;&gt;&lt;a href=&quot;#Day-1&quot; class=&quot;headerlink&quot; title=&quot;Day -1&quot;&gt;&lt;/a&gt;Day -1&lt;/h2&gt;&lt;p&gt;下午回到学校，看到了一个已经退役的高二学长出现在了机房里。然后机房里的气氛就变得浪了起来&lt;del&gt;虽然我本来就很浪&lt;em&gt;(:з」∠)&lt;/em&gt;&lt;/del&gt;&lt;br&gt;听说他们已经凑好了省选时dota五人黑的队伍，想去围观然后意识到我的电脑上已经什么都没有了。。难道省选的时候我只能默默地刷唐顿了吗。。&lt;em&gt;(:з」∠)&lt;/em&gt;&lt;br&gt;占了一晚上网速下完了全集唐顿感觉爽爽哒。。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Day-1&quot;&gt;&lt;a href=&quot;#Day-1&quot; class=&quot;headerlink&quot; title=&quot;Day -1&quot;&gt;&lt;/a&gt;Day -1&lt;/h2&gt;&lt;p&gt;下午回到学校，看到了一个已经退役的高二学长出现在了机房里。然后机房里的气氛就变得浪了起来&lt;del&gt;虽然我本来就很
+    
+    </summary>
+    
+      <category term="杂文" scheme="http://yoursite.com/categories/%E6%9D%82%E6%96%87/"/>
+    
+    
+      <category term="杂文" scheme="http://yoursite.com/tags/%E6%9D%82%E6%96%87/"/>
+    
+      <category term="游记" scheme="http://yoursite.com/tags/%E6%B8%B8%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>闲来无事学数据结构——非旋转Treap</title>
@@ -138,9 +163,9 @@
       <category term="笔记" scheme="http://yoursite.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="笔记" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="CDQ" scheme="http://yoursite.com/tags/CDQ/"/>
     

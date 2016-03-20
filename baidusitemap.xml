@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/03/20/%E5%8F%88%E5%88%B0%E4%B8%80%E5%B9%B4%E7%9C%81%E9%80%89%E5%AD%A3/</loc>
+    <lastmod>2016-03-20T12:17:31.566Z</lastmod>
+    <data>
+        <display>
+        <title>又到一年省选季</title>
+        <pubTime>2016-03-20T12:03:27.000Z</pubTime>
+        
+        <tag>杂文</tag>
+         
+        <tag>游记</tag>
+         
+         
+           
+             
+              <breadCrumb title="杂文" url="http://yoursite.com/categories/%E6%9D%82%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/03/14/hello-world/</loc>
     <lastmod>2016-03-20T03:24:55.678Z</lastmod>
     <data>
@@ -81,9 +103,9 @@
         <title>用CDQ分治维护凸壳</title>
         <pubTime>2016-03-17T23:03:43.000Z</pubTime>
         
-        <tag>题解</tag>
-         
         <tag>笔记</tag>
+         
+        <tag>题解</tag>
          
         <tag>CDQ</tag>
          
