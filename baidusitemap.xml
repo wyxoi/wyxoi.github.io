@@ -4,6 +4,52 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/03/25/%E7%9C%81%E9%80%89%E6%95%B0%E8%AE%BA%E8%AE%B2%E8%AF%BE%E7%9A%84%E6%90%AC%E8%BF%90/</loc>
+    <lastmod>2016-03-25T13:53:35.215Z</lastmod>
+    <data>
+        <display>
+        <title>省选数论讲课的搬运和前置技能</title>
+        <pubTime>2016-03-25T11:51:36.000Z</pubTime>
+        
+        <tag>笔记</tag>
+         
+        <tag>省选讲课</tag>
+         
+        <tag>搬运</tag>
+         
+         
+           
+             
+              <breadCrumb title="笔记" url="http://yoursite.com/categories/%E7%AC%94%E8%AE%B0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/03/18/%E6%95%B0%E8%AE%BA%E5%85%A5%E9%97%A8%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/</loc>
+    <lastmod>2016-03-25T13:38:00.888Z</lastmod>
+    <data>
+        <display>
+        <title>数论入门知识整理</title>
+        <pubTime>2016-03-18T06:44:34.000Z</pubTime>
+        
+        <tag>笔记</tag>
+         
+        <tag>数论</tag>
+         
+         
+           
+             
+              <breadCrumb title="笔记" url="http://yoursite.com/categories/%E7%AC%94%E8%AE%B0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/03/20/%E9%97%B2%E6%9D%A5%E6%97%A0%E4%BA%8B%E5%AD%A6%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E2%80%94%E2%80%94%E9%9D%9E%E6%97%8B%E8%BD%ACTreap/</loc>
     <lastmod>2016-03-25T07:42:50.488Z</lastmod>
     <data>
@@ -103,9 +149,9 @@
         <title>用CDQ分治维护凸壳</title>
         <pubTime>2016-03-17T23:03:43.000Z</pubTime>
         
-        <tag>题解</tag>
-         
         <tag>笔记</tag>
+         
+        <tag>题解</tag>
          
         <tag>CDQ</tag>
          
@@ -137,28 +183,6 @@
            
              
               <breadCrumb title="杂文" url="http://yoursite.com/categories/%E6%9D%82%E6%96%87/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/03/18/%E6%95%B0%E8%AE%BA%E5%85%A5%E9%97%A8%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/</loc>
-    <lastmod>2016-03-20T03:24:20.846Z</lastmod>
-    <data>
-        <display>
-        <title>数论入门知识整理</title>
-        <pubTime>2016-03-18T06:44:34.000Z</pubTime>
-        
-        <tag>数论</tag>
-         
-        <tag>笔记</tag>
-         
-         
-           
-             
-              <breadCrumb title="笔记" url="http://yoursite.com/categories/%E7%AC%94%E8%AE%B0/"/>
           
         </display>
     </data>

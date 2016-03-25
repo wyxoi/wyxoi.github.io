@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-25T06:29:24.526Z</updated>
+  <updated>2016-03-25T13:53:35.215Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,44 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>省选数论讲课的搬运和前置技能</title>
+    <link href="http://yoursite.com/2016/03/25/%E7%9C%81%E9%80%89%E6%95%B0%E8%AE%BA%E8%AE%B2%E8%AF%BE%E7%9A%84%E6%90%AC%E8%BF%90/"/>
+    <id>http://yoursite.com/2016/03/25/省选数论讲课的搬运/</id>
+    <published>2016-03-25T11:51:36.000Z</published>
+    <updated>2016-03-25T13:53:35.215Z</updated>
+    
+    <content type="html">&lt;p&gt;感觉这次省选讲课里好像只有洲爷的课正常，于是就来写一写&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;embed src=&quot;http://music.163.com/style/swf/widget.swf?sid=28912021&amp;type=2&amp;auto=0&amp;width=320&amp;height=66&quot; width=&quot;340&quot; height=&quot;86&quot; allownetworking=&quot;all&quot;&gt;好像找不到歌了。。&lt;em&gt;(:з」∠)&lt;/em&gt;换一种风格的发发&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;/p&gt;&lt;h4 id=&quot;menu&quot;&gt;Menu:&lt;/h4&gt;&lt;p&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#jump_jixinghanshu&quot;&gt;积性函数&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#jump_gezhongshulunhanshu&quot;&gt;各种数论函数&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#jump_juanji&quot;&gt;Dirichlet卷积&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#jump_mobiwusifanyan&quot;&gt;莫比乌斯反演&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;$$\mathcal {Continue…}$$&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;感觉这次省选讲课里好像只有洲爷的课正常，于是就来写一写&lt;br&gt;
+    
+    </summary>
+    
+      <category term="笔记" scheme="http://yoursite.com/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="笔记" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="省选讲课" scheme="http://yoursite.com/tags/%E7%9C%81%E9%80%89%E8%AE%B2%E8%AF%BE/"/>
+    
+      <category term="搬运" scheme="http://yoursite.com/tags/%E6%90%AC%E8%BF%90/"/>
+    
+  </entry>
   
   <entry>
     <title>又到一年省选季</title>
@@ -111,37 +149,40 @@
     <link href="http://yoursite.com/2016/03/18/%E6%95%B0%E8%AE%BA%E5%85%A5%E9%97%A8%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/"/>
     <id>http://yoursite.com/2016/03/18/数论入门知识整理/</id>
     <published>2016-03-18T06:44:34.000Z</published>
-    <updated>2016-03-20T03:24:20.846Z</updated>
+    <updated>2016-03-25T13:38:00.888Z</updated>
     
     <content type="html">&lt;p&gt;整理一下初等数论的基础知识。。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;embed src=&quot;http://music.163.com/style/swf/widget.swf?sid=35270645&amp;type=2&amp;auto=0&amp;width=320&amp;height=66&quot; width=&quot;340&quot; height=&quot;86&quot; allownetworking=&quot;all&quot;&gt;
 
 &lt;p&gt;今天听&lt;a href=&quot;http://dream-for-me.blog.163.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;狄拉克(贱贱)神犇&lt;/a&gt;给初三讲课。见证了我旁边的初三爷从茫然到一脸懵逼到崩溃的全过程，据他讲述，这是他至今为止唯一一次完全没有听懂的讲课。&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;好这些都不是重点&lt;br&gt;让我们来理一下重点是什么:&lt;/p&gt;
+&lt;p&gt;&lt;span id=&quot;menu&quot;&gt;好这些都不是重点&lt;span&gt;&lt;br&gt;让我们来理一下重点是什么:&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;逆元&lt;/li&gt;
-&lt;li&gt;扩展欧几里得&lt;/li&gt;
-&lt;li&gt;欧拉筛法&lt;/li&gt;
-&lt;li&gt;中国剩余定理&lt;/li&gt;
-&lt;li&gt;组合数&lt;/li&gt;
-&lt;li&gt;Lucas定理&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#jump_niyuan&quot;&gt;逆元&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#jump_exgcd&quot;&gt;扩展欧几里得&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#jump_oula&quot;&gt;欧拉筛法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#jump_crt&quot;&gt;中国剩余定理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#jump_zuheshu&quot;&gt;组合数&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#jump_lucas&quot;&gt;Lucas定理&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h3 id=&quot;逆元&quot;&gt;&lt;a href=&quot;#逆元&quot; class=&quot;headerlink&quot; title=&quot;逆元&quot;&gt;&lt;/a&gt;逆元&lt;/h3&gt;&lt;p&gt;关于逆元是什么,讲课的时候我给刚才那位当时还是处在茫然状态的初三爷讲了一下,然后结果是他没有听懂.讲道理逆元有这么难吗!!&lt;br&gt;对于$a\cdot b\equiv1(mod\ P)$我们就称b为a在模P域下的逆元,记a的逆元为$a^{-1}$(逆元要在模域下才有意义!!)&lt;br&gt;逆元有什么用呢？对于在模域下的除法$\frac{a}{b}\equiv a\cdot b^{-1}(mod\ P)$&lt;br&gt;怎么求逆元？&lt;br&gt;首先对于在模P域下的a,存在逆元的条件是$gcd(a,P)=1$&lt;br&gt;当a存在逆元时根据欧拉定理可得$a^{-1}\equiv a^{\phi(P)-1}(mod\ P)$&lt;br&gt;然后使用快速幂就可以在log的时间内求出单个元素的逆元了&lt;br&gt;如何快速求1~n所有数的逆元(这里的条件是P为素数)?&lt;br&gt;设$P\div a=q…r$即$P=qx+r$&lt;br&gt;然后可以将其放到模域下&lt;br&gt;\begin{align}&lt;br&gt;P &amp;amp; = qx+r \\&lt;br&gt;0 &amp;amp; \equiv qx+r (mod\ P) \\&lt;br&gt;-r &amp;amp; \equiv qx(mod\ P) \\&lt;br&gt;-rq^{-1} &amp;amp; \equiv x(mod\ P) \\&lt;br&gt;x^{-1} &amp;amp; \equiv -qr^{-1}(mod\ P) \\&lt;br&gt;x^{-1} &amp;amp; \equiv -\lfloor\frac{P}{x}\rfloor\cdot (P\ mod\ x)^{-1}(mod\ P)&lt;br&gt;\end{align}&lt;br&gt;然后就可以O(n)递推了&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;h3 id=&quot;jump_niyuan&quot;&gt;逆元&lt;/h3&gt;关于逆元是什么,讲课的时候我给刚才那位当时还是处在茫然状态的初三爷讲了一下,然后结果是他没有听懂.讲道理逆元有这么难吗!!&lt;br&gt;对于$a\cdot b\equiv1(mod\ P)$我们就称b为a在模P域下的逆元,记a的逆元为$a^{-1}$(逆元要在模域下才有意义!!)&lt;br&gt;逆元有什么用呢？对于在模域下的除法$\frac{a}{b}\equiv a\cdot b^{-1}(mod\ P)$&lt;br&gt;怎么求逆元？&lt;br&gt;首先对于在模P域下的a,存在逆元的条件是$gcd(a,P)=1$&lt;br&gt;当a存在逆元时根据欧拉定理可得$a^{-1}\equiv a^{\phi(P)-1}(mod\ P)$&lt;br&gt;然后使用快速幂就可以在log的时间内求出单个元素的逆元了&lt;br&gt;如何快速求1~n所有数的逆元(这里的条件是P为素数)?&lt;br&gt;设$P\div a=q…r$即$P=qx+r$&lt;br&gt;然后可以将其放到模域下&lt;br&gt;\begin{align}&lt;br&gt;P &amp;amp; = qx+r \\&lt;br&gt;0 &amp;amp; \equiv qx+r (mod\ P) \\&lt;br&gt;-r &amp;amp; \equiv qx(mod\ P) \\&lt;br&gt;-rq^{-1} &amp;amp; \equiv x(mod\ P) \\&lt;br&gt;x^{-1} &amp;amp; \equiv -qr^{-1}(mod\ P) \\&lt;br&gt;x^{-1} &amp;amp; \equiv -\lfloor\frac{P}{x}\rfloor\cdot (P\ mod\ x)^{-1}(mod\ P)&lt;br&gt;\end{align}&lt;br&gt;然后就可以O(n)递推了&lt;br&gt;&lt;a href=&quot;#menu&quot;&gt;Back to menu&lt;/a&gt;&lt;p&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&quot;扩展欧几里得&quot;&gt;&lt;a href=&quot;#扩展欧几里得&quot; class=&quot;headerlink&quot; title=&quot;扩展欧几里得&quot;&gt;&lt;/a&gt;扩展欧几里得&lt;/h3&gt;&lt;p&gt;第一个问题。。欧几里得算法是什么..其实就是辗转相除求GCD。。&lt;br&gt;那么扩展欧几里得是什么呢？&lt;br&gt;扩展欧几里得用来解决一类$a\cdot x+b\cdot y=c$的问题，可以求x的最小正整数解。当这个方程有解的时候，我们可以得知$gcd(a,b)|a$,$gcd(a,b)|b$,所以$gcd(a,b)|a\cdot x,gcd(a,b)|b\cdot y$，所以$gcd(a,b)|c$.然后可以把原方程化为$a\cdot x+b\cdot y=gcd(a,b)$求出解以后再乘上一个$c/gcd(a,b)$就可以了&lt;br&gt;对于怎么求解这个方程呢？&lt;br&gt;设$A=b,B=a\%b$&lt;br&gt;将原方程化为$A\cdot x_0+B\cdot y_0=gcd(a,b)$,也就是$b\cdot x_0+(a\%b)\cdot y_0=gcd(a,b)$&lt;br&gt;假设我们已经求出了这个方程，那么我们怎么推得原来方程的解呢?&lt;br&gt;\begin{align}&lt;br&gt;b\cdot x_0+(a\%b)\cdot y_0 &amp;amp; = gcd(a,b) \\&lt;br&gt;b\cdot x_0+(a-\lfloor\frac{a}{b}\rfloor\cdot b)\cdot y_0 &amp;amp; = gcd(a,b) \\&lt;br&gt;b\cdot x_0+a\cdot y_0-b\cdot\lfloor\frac{a}{b}\rfloor\cdot y_0 &amp;amp; = gcd(a,b) \\&lt;br&gt;a\cdot y_0+b\cdot(x_0-\lfloor\frac{a}{b}\rfloor\cdot y_0) &amp;amp; = gcd(a,b)&lt;br&gt;\end{align}然后我们就可以知道$x=y_0,y = x_0-\lfloor\frac{a}{b}\rfloor\cdot y_0$。&lt;br&gt;然后我们只要对原方程每次这样递归下去，然后就可以求出原方程的解了。&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;h3 id=&quot;jump_exgcd&quot;&gt;扩展欧几里得&lt;/h3&gt;第一个问题。。欧几里得算法是什么..其实就是辗转相除求GCD。。&lt;br&gt;那么扩展欧几里得是什么呢？&lt;br&gt;扩展欧几里得用来解决一类$a\cdot x+b\cdot y=c$的问题，可以求x的最小正整数解。当这个方程有解的时候，我们可以得知$gcd(a,b)|a$,$gcd(a,b)|b$,所以$gcd(a,b)|a\cdot x,gcd(a,b)|b\cdot y$，所以$gcd(a,b)|c$.然后可以把原方程化为$a\cdot x+b\cdot y=gcd(a,b)$求出解以后再乘上一个$c/gcd(a,b)$就可以了&lt;br&gt;对于怎么求解这个方程呢？&lt;br&gt;设$A=b,B=a\%b$&lt;br&gt;将原方程化为$A\cdot x_0+B\cdot y_0=gcd(a,b)$,也就是$b\cdot x_0+(a\%b)\cdot y_0=gcd(a,b)$&lt;br&gt;假设我们已经求出了这个方程，那么我们怎么推得原来方程的解呢?&lt;br&gt;\begin{align}&lt;br&gt;b\cdot x_0+(a\%b)\cdot y_0 &amp;amp; = gcd(a,b) \\&lt;br&gt;b\cdot x_0+(a-\lfloor\frac{a}{b}\rfloor\cdot b)\cdot y_0 &amp;amp; = gcd(a,b) \\&lt;br&gt;b\cdot x_0+a\cdot y_0-b\cdot\lfloor\frac{a}{b}\rfloor\cdot y_0 &amp;amp; = gcd(a,b) \\&lt;br&gt;a\cdot y_0+b\cdot(x_0-\lfloor\frac{a}{b}\rfloor\cdot y_0) &amp;amp; = gcd(a,b)&lt;br&gt;\end{align}然后我们就可以知道$x=y_0,y = x_0-\lfloor\frac{a}{b}\rfloor\cdot y_0$。&lt;br&gt;然后我们只要对原方程每次这样递归下去，然后就可以求出原方程的解了。&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;代码也很简单&lt;br&gt;&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Exgcd&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a,&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; b,&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &amp;amp;x,&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &amp;amp;y)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (b==&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;) &amp;#123;x = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;y = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt;;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	Exgcd(b,a%b,x,y);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; tmp = x;x = y;y = tmp-(a/b)*y;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#menu&quot;&gt;Back to menu&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&quot;欧拉筛法&quot;&gt;&lt;a href=&quot;#欧拉筛法&quot; class=&quot;headerlink&quot; title=&quot;欧拉筛法&quot;&gt;&lt;/a&gt;欧拉筛法&lt;/h3&gt;&lt;p&gt;对于筛法我最先知道的是NlogN的倍增筛质数，原来感觉这么一个东西应该就够了。有些题目只能放O(N)过，觉得这个东西越来越没用&lt;del&gt;确实没用&lt;/del&gt;。&lt;br&gt;欧拉筛法是什么呢？&lt;br&gt;欧拉筛法可以用来O(n)的时间里筛大部分（还是全部？并不清楚）积性函数。&lt;br&gt;什么是积性函数？&lt;br&gt;积性函数：任取p，q且$gcd(p,q)=1$，若$f(xy)=f(x)f(y)$，则f是一个积性函数&lt;br&gt;完全积性函数：任取p,q，若$f(pq)=f(p)f(q)$，则f是一个完全积性函数&lt;br&gt;欧拉筛法怎么做呢？&lt;br&gt;从2~n枚举一个数i，然后枚举小于i的质数j。如果j不是i的因子，那么j就是i*j的最小质因子，然后可以计算出f(i*j)的值。当j|i时，j是i的最小质因子，对于之后的所有质数k，i*k的最小质因子都不是k，而是j，所以直接跳出循环。这样我们可以发现每一个数都只被它的最小质因子筛到一次，所以整个算法的复杂度是O(n)的。&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;h3 id=&quot;jump_oula&quot;&gt;欧拉筛法&lt;/h3&gt;对于筛法我最先知道的是NlogN的倍增筛质数，原来感觉这么一个东西应该就够了。有些题目只能放O(N)过，觉得这个东西越来越没用&lt;del&gt;确实没用&lt;/del&gt;。&lt;br&gt;欧拉筛法是什么呢？&lt;br&gt;欧拉筛法可以用来O(n)的时间里筛大部分（还是全部？并不清楚）积性函数。&lt;br&gt;什么是积性函数？&lt;br&gt;积性函数：任取p，q且$gcd(p,q)=1$，若$f(xy)=f(x)f(y)$，则f是一个积性函数&lt;br&gt;完全积性函数：任取p,q，若$f(pq)=f(p)f(q)$，则f是一个完全积性函数&lt;br&gt;欧拉筛法怎么做呢？&lt;br&gt;从2~n枚举一个数i，然后枚举小于i的质数j。如果j不是i的因子，那么j就是i*j的最小质因子，然后可以计算出f(i*j)的值。当j|i时，j是i的最小质因子，对于之后的所有质数k，i*k的最小质因子都不是k，而是j，所以直接跳出循环。这样我们可以发现每一个数都只被它的最小质因子筛到一次，所以整个算法的复杂度是O(n)的。&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;欧拉筛素数代码&lt;br&gt;&lt;figure class=&quot;highlight c++&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Getprime&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; i=&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;;i&amp;lt;=n;i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (!vis[i]) prime[++sum] = i;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; j=&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;j&amp;lt;=sum &amp;amp;&amp;amp; i*prime[j]&amp;lt;=n;j++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			vis[i*j] = j;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (i%prime[j]==&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;) &lt;span class=&quot;keyword&quot;&gt;break&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#menu&quot;&gt;Back to menu&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&quot;中国剩余定理-CRT&quot;&gt;&lt;a href=&quot;#中国剩余定理-CRT&quot; class=&quot;headerlink&quot; title=&quot;中国剩余定理(CRT)&quot;&gt;&lt;/a&gt;中国剩余定理(CRT)&lt;/h3&gt;&lt;p&gt;中国剩余定理，用来解决一类一元线性同余方程组&lt;br&gt;一元线性同余方程组问题最早可见于中国南北朝时期（公元5世纪）的数学著作《孙子算经》卷下第二十六题，叫做“物不知数”问题，原文如下：&lt;br&gt;有物不知其数，三三数之剩二，五五数之剩三，七七数之剩二。问物几何？&lt;br&gt;即，一个整数除以三余二，除以五余三，除以七余二，求这个整数。《孙子算经》中首次提到了同余方程组问题，以及以上具体问题的解法，因此在中文数学文献中也会将中国剩余定理称为孙子定理。&lt;br&gt;宋朝数学家秦九韶于1247年《数书九章》卷一、二《大衍类》对“物不知数”问题做出了完整系统的解答。明朝数学家程大位将解法编成易于上口的《孙子歌诀》：三人同行七十希，五树梅花廿一支，七子团圆正半月，除百零五使得知这个歌诀给出了模数为3、5、7时候的同余方程的秦九韶解法。意思是：将除以3得到的余数乘以70，将除以5得到的余数乘以21，将除以7得到的余数乘以15，全部加起来后除以105，得到的余数就是答案。比如说在以上的物不知数问题里面，按歌诀求出的结果就是23.（以上摘自某谋财害命网站）&lt;br&gt;然后把上面乱七八糟的东西整理一下就是求满足&lt;br&gt;\begin{align}&lt;br&gt;x &amp;amp; \equiv a_1(mod\ b_1) \\&lt;br&gt;x &amp;amp; \equiv a_2(mod\ b_2) \\&lt;br&gt;&amp;amp; . \\&lt;br&gt;&amp;amp; . \\&lt;br&gt;x &amp;amp; \equiv a_n(mod\ b_n)&lt;br&gt;\end{align}的最小x的值&lt;br&gt;这个方程是一定存在解的吗？&lt;br&gt;如果$a_1\ mod\ gcd(b_1,b_2)\not=a_2\ mod \ gcd(b_1,b_2)$,那么原方程组没有解&lt;br&gt;对于有解的方程&lt;br&gt;我们设$$M=\prod_{i=1}^{n} b_i$$$$D_i=\frac{M}{b_i}$$对于每一个方程，求出$$D_ix\equiv 1 (mod\ b_i)$$我们用求逆元的方法解出x，并把$D_i\cdot x$记为$X_i$&lt;br&gt;那么$X_i\cdot a_i$对其他所有b模的结果都为0，且对于模$b_i$的结果为$a_i$&lt;br&gt;那么$(\Sigma_{i=1}^{n} X_i\cdot A_i)mod M$就是答案&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;h3 id=&quot;jump_crt&quot;&gt;中国剩余定理(CRT)&lt;/h3&gt;中国剩余定理，用来解决一类一元线性同余方程组&lt;br&gt;一元线性同余方程组问题最早可见于中国南北朝时期（公元5世纪）的数学著作《孙子算经》卷下第二十六题，叫做“物不知数”问题，原文如下：&lt;br&gt;有物不知其数，三三数之剩二，五五数之剩三，七七数之剩二。问物几何？&lt;br&gt;即，一个整数除以三余二，除以五余三，除以七余二，求这个整数。《孙子算经》中首次提到了同余方程组问题，以及以上具体问题的解法，因此在中文数学文献中也会将中国剩余定理称为孙子定理。&lt;br&gt;宋朝数学家秦九韶于1247年《数书九章》卷一、二《大衍类》对“物不知数”问题做出了完整系统的解答。明朝数学家程大位将解法编成易于上口的《孙子歌诀》：三人同行七十希，五树梅花廿一支，七子团圆正半月，除百零五使得知这个歌诀给出了模数为3、5、7时候的同余方程的秦九韶解法。意思是：将除以3得到的余数乘以70，将除以5得到的余数乘以21，将除以7得到的余数乘以15，全部加起来后除以105，得到的余数就是答案。比如说在以上的物不知数问题里面，按歌诀求出的结果就是23.（以上摘自某谋财害命网站）&lt;br&gt;然后把上面乱七八糟的东西整理一下就是求满足&lt;br&gt;\begin{align}&lt;br&gt;x &amp;amp; \equiv a_1(mod\ b_1) \\&lt;br&gt;x &amp;amp; \equiv a_2(mod\ b_2) \\&lt;br&gt;&amp;amp; . \\&lt;br&gt;&amp;amp; . \\&lt;br&gt;x &amp;amp; \equiv a_n(mod\ b_n)&lt;br&gt;\end{align}的最小x的值&lt;br&gt;这个方程是一定存在解的吗？&lt;br&gt;如果$a_1\ mod\ gcd(b_1,b_2)\not=a_2\ mod \ gcd(b_1,b_2)$,那么原方程组没有解&lt;br&gt;对于有解的方程&lt;br&gt;我们设$$M=\prod_{i=1}^{n} b_i$$$$D_i=\frac{M}{b_i}$$对于每一个方程，求出$$D_ix\equiv 1 (mod\ b_i)$$我们用求逆元的方法解出x，并把$D_i\cdot x$记为$X_i$&lt;br&gt;那么$X_i\cdot a_i$对其他所有b模的结果都为0，且对于模$b_i$的结果为$a_i$&lt;br&gt;那么$(\Sigma_{i=1}^{n} X_i\cdot A_i)mod M$就是答案&lt;br&gt;&lt;a href=&quot;#menu&quot;&gt;Back to menu&lt;/a&gt;&lt;p&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&quot;组合数&quot;&gt;&lt;a href=&quot;#组合数&quot; class=&quot;headerlink&quot; title=&quot;组合数&quot;&gt;&lt;/a&gt;组合数&lt;/h3&gt;&lt;p&gt;一些比较常见的性质&lt;br&gt;$$A_{n}^{m}=C_{n}^{m}\cdot m!$$$$C_{n}^{m}=C_{n}^{n-m}$$$$C_{n}^{m}=C_{n-1}^{m}+C_{n-1}^{m-1}$$$$\sum_{i=0}^{n} C_{n}^{i}=2^n$$恩其他的应该没有什么好写的&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;h3 id=&quot;jump_zuheshu&quot;&gt;组合数&lt;/h3&gt;一些比较常见的性质&lt;br&gt;$$A_{n}^{m}=C_{n}^{m}\cdot m!$$$$C_{n}^{m}=C_{n}^{n-m}$$$$C_{n}^{m}=C_{n-1}^{m}+C_{n-1}^{m-1}$$$$\sum_{i=0}^{n} C_{n}^{i}=2^n$$恩其他的应该没有什么好写的&lt;br&gt;&lt;a href=&quot;#menu&quot;&gt;Back to menu&lt;/a&gt;&lt;p&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&quot;Lucas定理，组合数取模&quot;&gt;&lt;a href=&quot;#Lucas定理，组合数取模&quot; class=&quot;headerlink&quot; title=&quot;Lucas定理，组合数取模&quot;&gt;&lt;/a&gt;Lucas定理，组合数取模&lt;/h3&gt;&lt;p&gt;lucas定理用来计算$C_{n}^{m}\ mod \ P$的问题，其中P为质数，如果P不是质数就要用CRT进行合并。$$Lucas:C_{m}^{n} \equiv C_{m\ mod\ P}^{n\ mod\ P}\cdot C_{m/P}^{n/P}\ mod\ P$$&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;h3 id=&quot;jump_lucas&quot;&gt;Lucas定理，组合数取模&lt;/h3&gt;lucas定理用来计算$C_{n}^{m}\ mod \ P$的问题，其中P为质数，如果P不是质数就要用CRT进行合并。$$Lucas:C_{m}^{n} \equiv C_{m\ mod\ P}^{n\ mod\ P}\cdot C_{m/P}^{n/P}\ mod\ P$$&lt;p&gt;&lt;/p&gt;
 &lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;#include &amp;lt;cstring&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#include &amp;lt;cstdio&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;using namespace std;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;typedef long long LL;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;LL n,m,p;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;LL ksm(LL a,LL k)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    LL res = 1;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    for (;k;k&amp;gt;&amp;gt;=1,a=a*a%p) if (k&amp;amp;1) res = res*a%p;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    return res;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;LL C(LL n,LL m)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    if(m&amp;gt;n)return 0;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    LL ans=1;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    for(int i=1;i&amp;lt;=m;i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        LL a=(n+i-m)%p;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        LL b=i%p;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        ans=ans*(a*ksm(b,p-2)%p)%p;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    return ans;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;LL Lucas(LL n,LL m)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    if(m==0)return 1;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    return C(n%p,m%p)*Lucas(n/p,m/p)%p;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;int main()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    scanf(&quot;%d&quot;,&amp;amp;T);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    scanf(&quot;%lld%lld%lld&quot;,&amp;amp;n,&amp;amp;m,&amp;amp;p);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    printf(&quot;%lld\n&quot;,Lucas(n,m));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&quot;#menu&quot;&gt;Back to menu&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;有错误请指出$$\mathcal{FIN.}$$&lt;/p&gt;
 </content>
@@ -155,9 +196,9 @@
       <category term="笔记" scheme="http://yoursite.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="数论" scheme="http://yoursite.com/tags/%E6%95%B0%E8%AE%BA/"/>
-    
       <category term="笔记" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="数论" scheme="http://yoursite.com/tags/%E6%95%B0%E8%AE%BA/"/>
     
   </entry>
   
@@ -201,9 +242,9 @@
       <category term="笔记" scheme="http://yoursite.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
-    
       <category term="笔记" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
     
       <category term="CDQ" scheme="http://yoursite.com/tags/CDQ/"/>
     

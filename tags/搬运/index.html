@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>数论入门知识整理 | Wyxoi&#39;s Blog</title>
+  <title>Tag: 搬运 | Wyxoi&#39;s Blog</title>
   <!-- Meta data -->
   <meta name="baidu-site-verification" content="2LODYEoTVw" />
   <meta name="baidu-site-verification" content="8dbce4b9d39e237dafebd5518b652493"/>
@@ -88,7 +88,7 @@
 </head>
 
 <!--
-<body class="post-template">
+<body class="home-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -247,103 +247,38 @@
 
         <!-- ============================ END Hero Image =========================== -->
       
-<section id="intro">
+
+
+<section id="services">
     <div class="container">
-        <div class="row col-md-offset-2">
-            <div class="col-md-8">
-    			<span class="post-meta">
-      <time datetime="2016-03-18T06:44:34.000Z" itemprop="datePublished">
-          2016-03-18
-      </time>
-    
-    
-    | 
-    <a href='/tags/笔记/'>笔记</a>,
-    
-    <a href='/tags/数论/'>数论</a>
-    
-    
-</span>
-                <h1>数论入门知识整理</h1>
-            </div>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="row boxes">
+                    
+                    
+                        
+                        
+                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                            
+                              <h4 class="title"><a href="/2016/03/25/省选数论讲课的搬运/">省选数论讲课的搬运和前置技能</a></h4>
+                            
+                            <p><time datetime="2016-03-25T11:51:36.000Z"><a href="/2016/03/25/省选数论讲课的搬运/">2016-03-25</a></time></p>
+                        </div>
+                    
+                </div>
+            </div>    
         </div>
-        <div class="col-md-8 col-md-offset-2">
-      		<p>整理一下初等数论的基础知识。。<br><a id="more"></a></p>
-<embed src="http://music.163.com/style/swf/widget.swf?sid=35270645&type=2&auto=0&width=320&height=66" width="340" height="86" allownetworking="all">
+    </div>
+</section> 
 
-<p>今天听<a href="http://dream-for-me.blog.163.com/" target="_blank" rel="external">狄拉克(贱贱)神犇</a>给初三讲课。见证了我旁边的初三爷从茫然到一脸懵逼到崩溃的全过程，据他讲述，这是他至今为止唯一一次完全没有听懂的讲课。</p>
-<hr>
-<p><span id="menu">好这些都不是重点<span><br>让我们来理一下重点是什么:</span></span></p>
-<ul>
-<li><a href="#jump_niyuan">逆元</a></li>
-<li><a href="#jump_exgcd">扩展欧几里得</a></li>
-<li><a href="#jump_oula">欧拉筛法</a></li>
-<li><a href="#jump_crt">中国剩余定理</a></li>
-<li><a href="#jump_zuheshu">组合数</a></li>
-<li><a href="#jump_lucas">Lucas定理</a></li>
-</ul>
-<hr>
-<p></p><h3 id="jump_niyuan">逆元</h3>关于逆元是什么,讲课的时候我给刚才那位当时还是处在茫然状态的初三爷讲了一下,然后结果是他没有听懂.讲道理逆元有这么难吗!!<br>对于$a\cdot b\equiv1(mod\ P)$我们就称b为a在模P域下的逆元,记a的逆元为$a^{-1}$(逆元要在模域下才有意义!!)<br>逆元有什么用呢？对于在模域下的除法$\frac{a}{b}\equiv a\cdot b^{-1}(mod\ P)$<br>怎么求逆元？<br>首先对于在模P域下的a,存在逆元的条件是$gcd(a,P)=1$<br>当a存在逆元时根据欧拉定理可得$a^{-1}\equiv a^{\phi(P)-1}(mod\ P)$<br>然后使用快速幂就可以在log的时间内求出单个元素的逆元了<br>如何快速求1~n所有数的逆元(这里的条件是P为素数)?<br>设$P\div a=q…r$即$P=qx+r$<br>然后可以将其放到模域下<br>\begin{align}<br>P &amp; = qx+r \\<br>0 &amp; \equiv qx+r (mod\ P) \\<br>-r &amp; \equiv qx(mod\ P) \\<br>-rq^{-1} &amp; \equiv x(mod\ P) \\<br>x^{-1} &amp; \equiv -qr^{-1}(mod\ P) \\<br>x^{-1} &amp; \equiv -\lfloor\frac{P}{x}\rfloor\cdot (P\ mod\ x)^{-1}(mod\ P)<br>\end{align}<br>然后就可以O(n)递推了<br><a href="#menu">Back to menu</a><p></p>
-<hr>
-<p></p><h3 id="jump_exgcd">扩展欧几里得</h3>第一个问题。。欧几里得算法是什么..其实就是辗转相除求GCD。。<br>那么扩展欧几里得是什么呢？<br>扩展欧几里得用来解决一类$a\cdot x+b\cdot y=c$的问题，可以求x的最小正整数解。当这个方程有解的时候，我们可以得知$gcd(a,b)|a$,$gcd(a,b)|b$,所以$gcd(a,b)|a\cdot x,gcd(a,b)|b\cdot y$，所以$gcd(a,b)|c$.然后可以把原方程化为$a\cdot x+b\cdot y=gcd(a,b)$求出解以后再乘上一个$c/gcd(a,b)$就可以了<br>对于怎么求解这个方程呢？<br>设$A=b,B=a\%b$<br>将原方程化为$A\cdot x_0+B\cdot y_0=gcd(a,b)$,也就是$b\cdot x_0+(a\%b)\cdot y_0=gcd(a,b)$<br>假设我们已经求出了这个方程，那么我们怎么推得原来方程的解呢?<br>\begin{align}<br>b\cdot x_0+(a\%b)\cdot y_0 &amp; = gcd(a,b) \\<br>b\cdot x_0+(a-\lfloor\frac{a}{b}\rfloor\cdot b)\cdot y_0 &amp; = gcd(a,b) \\<br>b\cdot x_0+a\cdot y_0-b\cdot\lfloor\frac{a}{b}\rfloor\cdot y_0 &amp; = gcd(a,b) \\<br>a\cdot y_0+b\cdot(x_0-\lfloor\frac{a}{b}\rfloor\cdot y_0) &amp; = gcd(a,b)<br>\end{align}然后我们就可以知道$x=y_0,y = x_0-\lfloor\frac{a}{b}\rfloor\cdot y_0$。<br>然后我们只要对原方程每次这样递归下去，然后就可以求出原方程的解了。<p></p>
-<p>代码也很简单<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Exgcd</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b,<span class="keyword">int</span> &amp;x,<span class="keyword">int</span> &amp;y)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (b==<span class="number">0</span>) &#123;x = <span class="number">1</span>;y = <span class="number">0</span>;<span class="keyword">return</span>;&#125;</span><br><span class="line">	Exgcd(b,a%b,x,y);</span><br><span class="line">	<span class="keyword">int</span> tmp = x;x = y;y = tmp-(a/b)*y;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><a href="#menu">Back to menu</a></p>
-<hr>
-<p></p><h3 id="jump_oula">欧拉筛法</h3>对于筛法我最先知道的是NlogN的倍增筛质数，原来感觉这么一个东西应该就够了。有些题目只能放O(N)过，觉得这个东西越来越没用<del>确实没用</del>。<br>欧拉筛法是什么呢？<br>欧拉筛法可以用来O(n)的时间里筛大部分（还是全部？并不清楚）积性函数。<br>什么是积性函数？<br>积性函数：任取p，q且$gcd(p,q)=1$，若$f(xy)=f(x)f(y)$，则f是一个积性函数<br>完全积性函数：任取p,q，若$f(pq)=f(p)f(q)$，则f是一个完全积性函数<br>欧拉筛法怎么做呢？<br>从2~n枚举一个数i，然后枚举小于i的质数j。如果j不是i的因子，那么j就是i*j的最小质因子，然后可以计算出f(i*j)的值。当j|i时，j是i的最小质因子，对于之后的所有质数k，i*k的最小质因子都不是k，而是j，所以直接跳出循环。这样我们可以发现每一个数都只被它的最小质因子筛到一次，所以整个算法的复杂度是O(n)的。<p></p>
-<p>欧拉筛素数代码<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Getprime</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">2</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		<span class="keyword">if</span> (!vis[i]) prime[++sum] = i;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=sum &amp;&amp; i*prime[j]&lt;=n;j++)&#123;</span><br><span class="line">			vis[i*j] = j;</span><br><span class="line">			<span class="keyword">if</span> (i%prime[j]==<span class="number">0</span>) <span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><a href="#menu">Back to menu</a></p>
-<hr>
-<p></p><h3 id="jump_crt">中国剩余定理(CRT)</h3>中国剩余定理，用来解决一类一元线性同余方程组<br>一元线性同余方程组问题最早可见于中国南北朝时期（公元5世纪）的数学著作《孙子算经》卷下第二十六题，叫做“物不知数”问题，原文如下：<br>有物不知其数，三三数之剩二，五五数之剩三，七七数之剩二。问物几何？<br>即，一个整数除以三余二，除以五余三，除以七余二，求这个整数。《孙子算经》中首次提到了同余方程组问题，以及以上具体问题的解法，因此在中文数学文献中也会将中国剩余定理称为孙子定理。<br>宋朝数学家秦九韶于1247年《数书九章》卷一、二《大衍类》对“物不知数”问题做出了完整系统的解答。明朝数学家程大位将解法编成易于上口的《孙子歌诀》：三人同行七十希，五树梅花廿一支，七子团圆正半月，除百零五使得知这个歌诀给出了模数为3、5、7时候的同余方程的秦九韶解法。意思是：将除以3得到的余数乘以70，将除以5得到的余数乘以21，将除以7得到的余数乘以15，全部加起来后除以105，得到的余数就是答案。比如说在以上的物不知数问题里面，按歌诀求出的结果就是23.（以上摘自某谋财害命网站）<br>然后把上面乱七八糟的东西整理一下就是求满足<br>\begin{align}<br>x &amp; \equiv a_1(mod\ b_1) \\<br>x &amp; \equiv a_2(mod\ b_2) \\<br>&amp; . \\<br>&amp; . \\<br>x &amp; \equiv a_n(mod\ b_n)<br>\end{align}的最小x的值<br>这个方程是一定存在解的吗？<br>如果$a_1\ mod\ gcd(b_1,b_2)\not=a_2\ mod \ gcd(b_1,b_2)$,那么原方程组没有解<br>对于有解的方程<br>我们设$$M=\prod_{i=1}^{n} b_i$$$$D_i=\frac{M}{b_i}$$对于每一个方程，求出$$D_ix\equiv 1 (mod\ b_i)$$我们用求逆元的方法解出x，并把$D_i\cdot x$记为$X_i$<br>那么$X_i\cdot a_i$对其他所有b模的结果都为0，且对于模$b_i$的结果为$a_i$<br>那么$(\Sigma_{i=1}^{n} X_i\cdot A_i)mod M$就是答案<br><a href="#menu">Back to menu</a><p></p>
-<hr>
-<p></p><h3 id="jump_zuheshu">组合数</h3>一些比较常见的性质<br>$$A_{n}^{m}=C_{n}^{m}\cdot m!$$$$C_{n}^{m}=C_{n}^{n-m}$$$$C_{n}^{m}=C_{n-1}^{m}+C_{n-1}^{m-1}$$$$\sum_{i=0}^{n} C_{n}^{i}=2^n$$恩其他的应该没有什么好写的<br><a href="#menu">Back to menu</a><p></p>
-<hr>
-<p></p><h3 id="jump_lucas">Lucas定理，组合数取模</h3>lucas定理用来计算$C_{n}^{m}\ mod \ P$的问题，其中P为质数，如果P不是质数就要用CRT进行合并。$$Lucas:C_{m}^{n} \equiv C_{m\ mod\ P}^{n\ mod\ P}\cdot C_{m/P}^{n/P}\ mod\ P$$<p></p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;cstring&gt;</span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">typedef long long LL;</span><br><span class="line">LL n,m,p;</span><br><span class="line">LL ksm(LL a,LL k)&#123;</span><br><span class="line">    LL res = 1;</span><br><span class="line">    for (;k;k&gt;&gt;=1,a=a*a%p) if (k&amp;1) res = res*a%p;</span><br><span class="line">    return res;</span><br><span class="line">&#125;</span><br><span class="line">LL C(LL n,LL m)&#123;</span><br><span class="line">    if(m&gt;n)return 0;</span><br><span class="line">    LL ans=1;</span><br><span class="line">    for(int i=1;i&lt;=m;i++)&#123;</span><br><span class="line">        LL a=(n+i-m)%p;</span><br><span class="line">        LL b=i%p;</span><br><span class="line">        ans=ans*(a*ksm(b,p-2)%p)%p;</span><br><span class="line">    &#125;</span><br><span class="line">    return ans;</span><br><span class="line">&#125;</span><br><span class="line">LL Lucas(LL n,LL m)&#123;</span><br><span class="line">    if(m==0)return 1;</span><br><span class="line">    return C(n%p,m%p)*Lucas(n/p,m/p)%p;</span><br><span class="line">&#125;</span><br><span class="line">int main()&#123;</span><br><span class="line">    scanf("%d",&amp;T);</span><br><span class="line">    scanf("%lld%lld%lld",&amp;n,&amp;m,&amp;p);</span><br><span class="line">    printf("%lld\n",Lucas(n,m));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><a href="#menu">Back to menu</a></p>
-<hr>
-<p>有错误请指出$$\mathcal{FIN.}$$</p>
-
-            <div class="clearfix"></div>
-            <hr class="nogutter">
-			<div class="text" style=" text-align:center;">
-				<div class="row">
-					<div id="hitokoto"><font size=3	><script>hitokoto()</script></font></div>
-				<!--    <p>每一个不曾起舞的日子都是对生命的辜负。</p> -->
-				</div>
-			</div>
+<section id="statement">
+    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
+        <div class="row">
+			<div id="hitokoto"><font size=4><script>hitokoto()</script></font></div>
+        <!--    <p>每一个不曾起舞的日子都是对生命的辜负。</p> -->
         </div>
-        <nav class="pagination" role="pagination">
-    
-    <a class="pull-left" href="/2016/03/20/闲来无事学数据结构——非旋转Treap/" style="float: left;">
-        ← 闲来无事学数据结构——非旋转Treap
-    </a>
-    
-    
-    <a class="pull-right" href="/2016/03/18/用CDQ分治维护凸壳/">
-        用CDQ分治维护凸壳 →
-    </a>
-    
-</nav>
-
-        <div class="duoshuo">
-			
-<div class="ds-thread" data-thread-key="2016/03/18/数论入门知识整理/" data-title="数论入门知识整理" data-url="http://yoursite.com/2016/03/18/数论入门知识整理/"></div>
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"wyxoi"};
-(function() {
-	var ds = document.createElement('script');
-	ds.type = 'text/javascript';ds.async = true;
-	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-	ds.charset = 'UTF-8';
-	(document.getElementsByTagName('head')[0] 
-	 || document.getElementsByTagName('body')[0]).appendChild(ds);
-})();
-</script>
-
-		</div>
     </div>
 </section>
-
 
       
 <!-- ============================ Footer =========================== -->
