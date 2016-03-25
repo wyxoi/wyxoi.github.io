@@ -3451,6 +3451,8 @@ footer .footer_bottom {
 .icon-github:before { content: "\e636"; }
 /*---------------- END ------------------------*/
 
+.highlight *{font-family:Consolas,monospace !important}
+
 @charset "utf-8";
 /* CSS Document */
 
