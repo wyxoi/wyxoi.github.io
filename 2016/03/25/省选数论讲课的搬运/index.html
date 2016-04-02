@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>省选数论讲课的搬运和前置技能 | Wyxoi&#39;s Blog</title>
+  <title>省选与之前数论函数讲课的搬运和整合 | Wyxoi&#39;s Blog</title>
   <!-- Meta data -->
   <meta name="baidu-site-verification" content="2LODYEoTVw" />
   <meta name="baidu-site-verification" content="8dbce4b9d39e237dafebd5518b652493"/>
@@ -111,16 +111,16 @@
 				  	
 				    <li><a href="/categories/Hello-World/" class="animsition-link">Hello World<small>(1)</small></a></li>
 				    
-				    <li><a href="/categories/杂文/" class="animsition-link">杂文<small>(2)</small></a></li>
+				    <li><a href="/categories/杂文/" class="animsition-link">杂文<small>(3)</small></a></li>
 				    
-				    <li><a href="/categories/笔记/" class="animsition-link">笔记<small>(4)</small></a></li>
+				    <li><a href="/categories/笔记/" class="animsition-link">笔记<small>(6)</small></a></li>
 				    
 				    <li><a href="/categories/题解/" class="animsition-link">题解<small>(1)</small></a></li>
 				    
 				</ul>
         	</li>
 			
-			 <a href="/tags/BZOJ/" style="font-size: 10px;">BZOJ</a> <a href="/tags/CDQ/" style="font-size: 10px;">CDQ</a> <a href="/tags/HAOI/" style="font-size: 10px;">HAOI</a> <a href="/tags/Hello-World/" style="font-size: 10px;">Hello World</a> <a href="/tags/不定时发癫/" style="font-size: 10px;">不定时发癫</a> <a href="/tags/平衡树/" style="font-size: 10px;">平衡树</a> <a href="/tags/总结规划/" style="font-size: 10px;">总结规划</a> <a href="/tags/搬运/" style="font-size: 10px;">搬运</a> <a href="/tags/数据结构/" style="font-size: 10px;">数据结构</a> <a href="/tags/数论/" style="font-size: 10px;">数论</a> <a href="/tags/杂文/" style="font-size: 16.67px;">杂文</a> <a href="/tags/游记/" style="font-size: 10px;">游记</a> <a href="/tags/省选讲课/" style="font-size: 10px;">省选讲课</a> <a href="/tags/笔记/" style="font-size: 20px;">笔记</a> <a href="/tags/题解/" style="font-size: 13.33px;">题解</a>	
+			 <a href="/tags/BZOJ/" style="font-size: 10px;">BZOJ</a> <a href="/tags/CDQ/" style="font-size: 10px;">CDQ</a> <a href="/tags/HAOI/" style="font-size: 10px;">HAOI</a> <a href="/tags/Hello-World/" style="font-size: 10px;">Hello World</a> <a href="/tags/不定时发癫/" style="font-size: 13.33px;">不定时发癫</a> <a href="/tags/主席树/" style="font-size: 13.33px;">主席树</a> <a href="/tags/坑/" style="font-size: 10px;">坑</a> <a href="/tags/平衡树/" style="font-size: 10px;">平衡树</a> <a href="/tags/总结规划/" style="font-size: 10px;">总结规划</a> <a href="/tags/搬运/" style="font-size: 10px;">搬运</a> <a href="/tags/数据结构/" style="font-size: 10px;">数据结构</a> <a href="/tags/数论/" style="font-size: 13.33px;">数论</a> <a href="/tags/杂文/" style="font-size: 16.67px;">杂文</a> <a href="/tags/游记/" style="font-size: 10px;">游记</a> <a href="/tags/省选讲课/" style="font-size: 10px;">省选讲课</a> <a href="/tags/笔记/" style="font-size: 20px;">笔记</a> <a href="/tags/题解/" style="font-size: 16.67px;">题解</a>	
         </ul>
         <!-- Lists in Slidebars -->
         <ul class="sb-menu secondary">
@@ -260,28 +260,143 @@
     | 
     <a href='/tags/笔记/'>笔记</a>,
     
+    <a href='/tags/数论/'>数论</a>,
+    
     <a href='/tags/省选讲课/'>省选讲课</a>,
     
     <a href='/tags/搬运/'>搬运</a>
     
     
 </span>
-                <h1>省选数论讲课的搬运和前置技能</h1>
+                <h1>省选与之前数论函数讲课的搬运和整合</h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
       		<p>感觉这次省选讲课里好像只有洲爷的课正常，于是就来写一写<br><a id="more"></a></p>
-<p><embed src="http://music.163.com/style/swf/widget.swf?sid=28912021&type=2&auto=0&width=320&height=66" width="340" height="86" allownetworking="all">好像找不到歌了。。<em>(:з」∠)</em>换一种风格的发发</p>
+<p><embed src="http://music.163.com/style/swf/widget.swf?sid=28912021&type=2&auto=0&width=320&height=66" width="340" height="86" allownetworking="all">好像找不到歌了。。<em>(:з」∠)</em>换一种风格的发发<br>突然想起来好像给初三讲数论函数的是我。。<em>(:з」∠)</em>，我自己都不会怎么讲。要出事了。<br>以下内容中涉及函数均为数论函数，即定义域为正整数的函数。<br>以下内容纯属搬运与口胡，若有错误，欢迎指出<del>(请当做没看见)</del>。</p>
 <hr>
-<p></p><h4 id="menu">Menu:</h4><p></p>
+<p></p><h2 id="menu">Menu:</h2><p></p>
 <ul>
 <li><a href="#jump_jixinghanshu">积性函数</a></li>
-<li><a href="#jump_gezhongshulunhanshu">各种数论函数</a></li>
 <li><a href="#jump_juanji">Dirichlet卷积</a></li>
 <li><a href="#jump_mobiwusifanyan">莫比乌斯反演</a></li>
+<li><a href="http://www.eddy.com.cn/rc/zoe.html" target="_blank" rel="external">And more…(这里没有链接，不要点!!)</a></li>
 </ul>
 <hr>
-<p>$$\mathcal {Continue…}$$</p>
+<p><span id="jump_jixinghanshu">　</span></p>
+<h3 id="积性函数"><a href="#积性函数" class="headerlink" title="积性函数"></a>积性函数</h3><p><strong>积性函数：$\forall a,b \in N^+,\ gcd(a,b)=1,\ f(a\cdot b)=f(a)\cdot f(b)$</strong><br>一些常见的积性函数:<br>欧拉函数：</p>
+<ul>
+<li>$\varphi(n)$表示$n$以内与$n$互质的数的个数。</li>
+<li>设$n=p_1^{q_1}\cdot p_2^{q_2}\ldots p_k^{q_k}$,$\varphi(n)=n\cdot \Pi_{i=1}^{k} \frac {p_i-1}{p_i}$</li>
+</ul>
+<p>莫比乌斯函数：</p>
+<ul>
+<li>如果$n$有平方因子，则$\mu (n)=0$</li>
+<li>如果$n$没有平方因子，则设$n=p_1^{q_1}\cdot p_2^{q_2}\ldots p_k^{q_k}$，$\mu (n)=(-1)^k$</li>
+</ul>
+<p>除数函数：</p>
+<ul>
+<li>$\sigma _k(n)$表示$n$的所有正因子的$k$次幂的和。</li>
+<li>特别的<ul>
+<li>$d(n)=\sigma _0(n)$表示$n$的正因子个数。</li>
+<li>$\sigma(n)=\sigma_1(n)$表示$n$的所有正因子之和。</li>
+</ul>
+</li>
+</ul>
+<p>最大公因数函数：</p>
+<ul>
+<li>$gcd(n,k)$在$k$为固定时，$n,k$的最大公因数。</li>
+</ul>
+<p><br><br><strong>完全积性函数：$\forall a,b \in N^+\ ,f(a\cdot b)=f(a)\cdot f(b)$</strong><br>一些常见的完全积性函数：<br>幂函数：</p>
+<ul>
+<li>$ld_k(n)=n^k$</li>
+<li>特别的<ul>
+<li>$1(n)=ld_0(n)=1$</li>
+<li>$ld(n)=ld_1(n)=n$</li>
+</ul>
+</li>
+</ul>
+<p>单位函数：</p>
+<ul>
+<li>$\rm e(n)=\epsilon (n)=\begin{cases}1 &amp; n=1 \\0 &amp; n&gt;1\end{cases}$</li>
+</ul>
+<p><br><br><strong>积性函数的一些性质</strong><br>性质一：</p>
+<ul>
+<li>设$n=p_1^{q_1}\cdot p_2^{q_2}\ldots p_k^{q_k}$，$f(n)=\Sigma_{i=1}^{k} f(p_i^{q_i})$</li>
+<li>所以如果可以快速求出$f(p_k^{q_k})$的值，就可以用Euler筛法$O(n)$求出所有$f(i)(i\leq n)$的值。</li>
+</ul>
+<p>性质二：</p>
+<ul>
+<li>若$f，g$为积性函数，那么<ul>
+<li>它们的点积$(f\cdot g)(i)=f(i)\cdot g(i)$也是积性函数</li>
+<li>它们的商$(\frac {f}{g})(i)=\frac {f(i)}{g(i)}$也是积性函数</li>
+</ul>
+</li>
+</ul>
+<p><br></p>
+<p><a href="#menu">Back To Menu</a></p>
+<hr>
+<p><span id="jump_juanji"> </span></p>
+<h3 id="Dirichlet-卷积"><a href="#Dirichlet-卷积" class="headerlink" title="$Dirichlet$卷积"></a>$Dirichlet$卷积</h3><p><strong>定义：</strong></p>
+<ul>
+<li>两个数论函数$f,g$的$Dirichlet$卷积为：$$(f*g)(n)=\sum_{d|n} f(d)\cdot g(\frac {n}{d})$$</li>
+</ul>
+<p><br><br><strong>性质：</strong></p>
+<ul>
+<li>交换律：$f*g=g*f$</li>
+<li>结合律：$(f*g)*h=f*(g*h)$</li>
+<li>分配律：$f*(g+h)=f*g+f*h$</li>
+<li>单位元：$\epsilon*f=f*\epsilon$</li>
+<li>若$f,g$为积性函数，则$f*g$也为积性函数</li>
+</ul>
+<p><br><br><strong>一些常见的$Dirichlet$卷积：</strong></p>
+<ul>
+<li>$d(n)=\sum_{d|n} 1\Leftrightarrow d=1*1$</li>
+<li>$\sigma(n)=\sum_{d|n} d\Leftrightarrow \sigma=1*ld$</li>
+<li>$\epsilon(n)=\sum_{d|n}\mu(d)\Leftrightarrow \epsilon=1*\mu$</li>
+<li>$\varphi(n)=\sum_{d|n}\mu(d)\cdot \frac {n}{d} \Leftrightarrow \varphi=\mu*ld$</li>
+<li>$n=\sum_{d|n}\varphi(d)\Leftrightarrow ld=1*\varphi$</li>
+</ul>
+<p><br></p>
+<p><a href="#menu">Back To Menu</a></p>
+<hr>
+<p><span id="jump_mobiwusifanyan"> </span></p>
+<h3 id="莫比乌斯反演"><a href="#莫比乌斯反演" class="headerlink" title="莫比乌斯反演"></a>莫比乌斯反演</h3><p><strong>莫比乌斯反演公式：</strong></p>
+<ul>
+<li>如果两个数论函数$f,g$满足$$f(n)=\sum_{d|n}g(d)$$</li>
+<li>则它们满足$$g(n)=\sum_{d|n}\mu(n)\cdot f(\frac{n}{d})$$</li>
+<li>反之亦然</li>
+<li>写成$Dirichlet$卷积形式为$f=g*1\Leftrightarrow g=\mu*f$</li>
+</ul>
+<p><br><br><strong>证明：</strong></p>
+<ul>
+<li>设，$f=g*1$</li>
+<li>两边都卷上，$\mu$,得$\mu*f=\mu*g*1$</li>
+<li>整理得，$\mu*f=\epsilon*g=g$</li>
+<li>两边都卷上1，$g*1=\mu*f*1=\epsilon*f=f$</li>
+<li>证毕</li>
+</ul>
+<p><br><br><strong>莫比乌斯等式：</strong></p>
+<ul>
+<li>$${\rm e}(n)=\sum_{d|n}\mu(d)$$</li>
+<li>设$$n=\sum_{i=1}^{k} p_i^{q_i}，\ n’=\sum_{i=1}^{k}p_i，\ S=\lbrace 1,2,\ldots ,k\rbrace $$</li>
+<li>那么$$\sum_{d|n}\mu(d)=\sum_{d|n’}\mu(d)=\sum_{I\subseteq S}(-1)^I=\sum_{i=0}^{k}{k \choose i}(-1)^i=(1-1)^k$$</li>
+<li>证毕</li>
+</ul>
+<p><br><br><strong>简单的应用：</strong></p>
+<ul>
+<li>$$\varphi=\mu*ld\Leftrightarrow ld=\varphi*1$$</li>
+<li>$$\varphi(n)=\sum_{d|n}\mu(d)\cdot \frac{n}{d}\Leftrightarrow n=\sum_{d|n}\varphi(d)$$</li>
+</ul>
+<p><br><br><strong>另一种形式：</strong></p>
+<ul>
+<li>在整数集$D$中，$$f(x)=\sum_{x|d,d\in D}g(d)\Leftrightarrow g(x)=\sum_{x|d,d\in D}\mu(d)f(\frac{d}{x})$$</li>
+<li>两种形式的本质都是容斥原理</li>
+</ul>
+<p><br></p>
+<p><a href="#menu">Back To Menu</a></p>
+<hr>
+<p>杜教筛什么的暂时还不会，还要等填坑。。。<em>(:з」∠)</em><br>有错误请指出$$\mathcal {Continue…}$$</p>
 
             <div class="clearfix"></div>
             <hr class="nogutter">
@@ -294,6 +409,10 @@
         </div>
         <nav class="pagination" role="pagination">
     
+    <a class="pull-left" href="/2016/03/30/一道题目引发的惨案/" style="float: left;">
+        ← 一道题目引发的惨案
+    </a>
+    
     
     <a class="pull-right" href="/2016/03/20/又到一年省选季/">
         又到一年省选季 →
@@ -303,7 +422,7 @@
 
         <div class="duoshuo">
 			
-<div class="ds-thread" data-thread-key="2016/03/25/省选数论讲课的搬运/" data-title="省选数论讲课的搬运和前置技能" data-url="http://yoursite.com/2016/03/25/省选数论讲课的搬运/"></div>
+<div class="ds-thread" data-thread-key="2016/03/25/省选数论讲课的搬运/" data-title="省选与之前数论函数讲课的搬运和整合" data-url="http://yoursite.com/2016/03/25/省选数论讲课的搬运/"></div>
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"wyxoi"};
 (function() {
