@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Tag: 平衡树 | Wyxoi&#39;s Blog</title>
+  <title>数论函数一丢题解 | Wyxoi&#39;s Blog</title>
   <!-- Meta data -->
   <meta name="baidu-site-verification" content="2LODYEoTVw" />
   <meta name="baidu-site-verification" content="8dbce4b9d39e237dafebd5518b652493"/>
@@ -88,7 +88,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -247,38 +247,85 @@
 
         <!-- ============================ END Hero Image =========================== -->
       
-
-
-<section id="services">
+<section id="intro">
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row boxes">
-                    
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2016/03/20/闲来无事学数据结构——非旋转Treap/">闲来无事学数据结构——非旋转Treap</a></h4>
-                            
-                            <p><time datetime="2016-03-20T03:12:28.000Z"><a href="/2016/03/20/闲来无事学数据结构——非旋转Treap/">2016-03-20</a></time></p>
-                        </div>
-                    
-                </div>
-            </div>    
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2016-04-22T06:16:03.000Z" itemprop="datePublished">
+          2016-04-22
+      </time>
+    
+    
+    | 
+    <a href='/tags/题解/'>题解</a>,
+    
+    <a href='/tags/数论/'>数论</a>,
+    
+    <a href='/tags/数论函数/'>数论函数</a>,
+    
+    <a href='/tags/杜教筛/'>杜教筛</a>
+    
+    
+</span>
+                <h1>数论函数一丢题解</h1>
+            </div>
         </div>
-    </div>
-</section> 
+        <div class="col-md-8 col-md-offset-2">
+      		<p>省选二试之前刷数论<del>(水)</del>，来写一写题解。<br><a id="more"></a></p>
+<p><embed src="http://music.163.com/style/swf/widget.swf?sid=409872507&type=2&auto=0&width=320&height=66" width="340" height="86" allownetworking="all">Aimer女神的新歌，三天4000+的评论，期待完整版<br>突然想起来我是不是还有一个主席树的坑。。<em>(:з」∠)</em> 。。算了不管他了。。</p>
+<hr>
+<h3 id="BZOJ-2301-HAOI2011-Problem-b"><a href="#BZOJ-2301-HAOI2011-Problem-b" class="headerlink" title="BZOJ 2301: [HAOI2011]Problem b"></a>BZOJ 2301: [HAOI2011]Problem b</h3><p><a href="http:\\www.lydsy.com/JudgeOnline/problem.php?id=2301" target="_blank" rel="external">点击这里去虐题</a><br>题意要求$\sum_{i=a}^{b}\sum_{j=c}^{d}e(gcd(i,j)=k)$<br>首先我们可以利用容斥，将二维区间的询问改为四个二维前缀的询问。<br>然后显然的$\sum_{i=1}^{n}\sum_{j=1}^{m}e(gcd(i,j)=k)=\sum_{i=1}^{\lfloor\frac{n}{k}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{k}\rfloor}e(gcd(i,j))$<br>然后尝试化简<br>$$<br>\begin{align}<br>&amp; \ \sum_{i=1}^{n}\sum_{j=1}^{m}e(gcd(i,j)) \\<br>= &amp; \ \sum_{i=1}^{n}\sum_{j=1}^{m}\sum_{d|gcd(i,j)}\mu(d) \\<br>= &amp; \ \sum_{d}\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{d}\rfloor}\mu(d) \\<br>= &amp; \ \sum_{d}\mu(d)\lfloor\frac{n}{d}\rfloor\lfloor\frac{m}{d}\rfloor \\<br>\end{align}<br>$$<br>对于$\lfloor\frac{n}{d}\rfloor$的值，只有$\sqrt{n}$种，预处理莫比乌斯函数前缀和之后分段处理。</p>
+<hr>
+<h3 id="BZOJ-2005-Noi2010-能量采集"><a href="#BZOJ-2005-Noi2010-能量采集" class="headerlink" title="BZOJ 2005: [Noi2010]能量采集"></a>BZOJ 2005: [Noi2010]能量采集</h3><p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=2005" target="_blank" rel="external">点击这里去虐题</a><br>题意要求<br>$$<br>\begin{align}<br>&amp; \ \sum_{i=1}^{n}\sum_{j=1}^{m}(gcd(i,j)*2-1) \\<br>= &amp; \ 2*\sum_{i=1}^{n}\sum_{j=1}^{m}gcd(i,j)-n*m \\<br>\end{align}<br>$$<br>然后就如同上题一样求出$\sum_{i=1}^{n}\sum_{j=1}^{m}gcd(i,j)$即可</p>
+<hr>
+<h3 id="BZOJ-2820-YY的GCD"><a href="#BZOJ-2820-YY的GCD" class="headerlink" title="BZOJ 2820: YY的GCD"></a>BZOJ 2820: YY的GCD</h3><p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=2820" target="_blank" rel="external">点击这里去虐题</a><br>题意要求$\sum_{i=1}^{n}\sum_{j=1}^{m}1(gcd(i,j)是质数)$<br>我们设$f(n)=<br>\begin{cases}<br>1\ \ \ n是质数 \\<br>0\ \ \ n不是质数 \\<br>\end{cases}<br>$<br>于是问题就变成了求$\sum_{i=1}^{n}\sum_{j=1}^{m}f(gcd(i,j))$了<br>$$<br>\begin{align}<br>&amp; \ \sum_{i=1}^{n}\sum_{j=1}^{m}f(gcd(i,j)) \\<br>= &amp; \ \sum_{d}\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{d}\rfloor}f(d)e(gcd(i,j)) \\<br>= &amp; \ \sum_{d}f(d)\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{d}\rfloor}\sum_{d’|gcd(i,j)}\mu(d’) \\<br>= &amp; \ \sum_{d}\sum_{d’}f(d)\mu(d’)\sum_{i=1}^{\lfloor\frac{n}{dd’}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{dd’}\rfloor} \\<br>= &amp; \ \sum_{d}\sum_{d’}f(d)\mu(d’)\lfloor\frac{n}{dd’}\rfloor\lfloor\frac{m}{dd’}\rfloor \\<br>\end{align}<br>$$<br>设$g(n)=\sum_{d|n}f(d)\mu(\frac{n}{d})$<br>$$<br>\begin{align}<br>&amp; \ \sum_{d}\sum_{d’}f(d)\mu(d’)\lfloor\frac{n}{dd’}\rfloor\lfloor\frac{m}{dd’}\rfloor \\<br>= &amp; \ \sum_{i=1}^{n}g(i)\lfloor\frac{n}{i}\rfloor\lfloor\frac{m}{i}\rfloor \\<br>\end{align}<br>$$<br>然后与上题类似预处理g的前缀和，对函数分段计算。</p>
+<hr>
+<h3 id="BZOJ-3309-DZY-Loves-Math"><a href="#BZOJ-3309-DZY-Loves-Math" class="headerlink" title="BZOJ 3309: DZY Loves Math"></a>BZOJ 3309: DZY Loves Math</h3><p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=3309" target="_blank" rel="external">点击这里去虐题</a><br>将上题中的函数f的定义换一下就可以。</p>
+<hr>
+<h3 id="BZOJ-2154-Crash的数字表格"><a href="#BZOJ-2154-Crash的数字表格" class="headerlink" title="BZOJ 2154: Crash的数字表格"></a>BZOJ 2154: Crash的数字表格</h3><p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=2154" target="_blank" rel="external">点击这里去虐题</a><br>题意要求$\sum_{i=1}^{n}\sum_{j=1}^{m}lcm(i,j)$<br>尝试转化成枚举Gcd的形式<br>$$<br>\begin{align}<br>&amp; \ \sum_{i=1}^{n}\sum_{j=1}^{m}\left(\frac{i*j}{gcd(i,j)}\right) \\<br>= &amp; \ \sum_{d}\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{d}\rfloor}\left(\frac{id*jd}{d}\right)e(gcd(i,j)) \\<br>= &amp; \ \sum_{d}d\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{d}\rfloor}i*j\sum_{d’|gcd(i,j)}\mu(d’) \\<br>= &amp; \ \sum_{d}\sum_{d’}d*d’^2*\mu(d’)\sum_{i=1}^{\lfloor\frac{n}{dd’}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{dd’}\rfloor}i*j \\<br>\end{align}<br>$$<br>很显然的可以得到$\sum_{i=1}^{n}\sum_{j=1}^{m}i*j=\frac{1}{4}nm(n+1)(m+1)$<br>与上题类似地设$g(n)=\sum_{d|n}d^2*\mu(d)*\frac{n}{d}$<br>$$<br>\begin{align}<br>&amp; \ \sum_{d}\sum_{d’}d*d’^2*\mu(d’)\sum_{i=1}^{\lfloor\frac{n}{dd’}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{dd’}\rfloor}i*j \\<br>= &amp; \ \sum_{i}g(i)\sum_{i=1}^{\lfloor\frac{n}{i}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{i}\rfloor}i*j<br>\end{align}<br>$$<br>因为g是积性函数，所以可以做到$O(n)$预处理。</p>
+<hr>
+<h3 id="BZOJ-2693-jzptab"><a href="#BZOJ-2693-jzptab" class="headerlink" title="BZOJ 2693: jzptab"></a>BZOJ 2693: jzptab</h3><p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=2693" target="_blank" rel="external">点击这里去虐题</a><br>与上题相同，多组数据</p>
+<hr>
+<h3 id="BZOJ-3560-DZY-Loves-Math-V"><a href="#BZOJ-3560-DZY-Loves-Math-V" class="headerlink" title="BZOJ 3560: DZY Loves Math V"></a>BZOJ 3560: DZY Loves Math V</h3><p><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=3560" target="_blank" rel="external">点击这里去虐题</a><br>题意要求$\sum_{i_1|a_1}\sum_{i_2|a_2}\cdots\sum_{i_n|a_n}\varphi(i_{1}i_{2}\cdots i_n)$</p>
 
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-			<div id="hitokoto"><font size=4><script>hitokoto()</script></font></div>
-        <!--    <p>每一个不曾起舞的日子都是对生命的辜负。</p> -->
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+			<div class="text" style=" text-align:center;">
+				<div class="row">
+					<div id="hitokoto"><font size=3	><script>hitokoto()</script></font></div>
+				<!--    <p>每一个不曾起舞的日子都是对生命的辜负。</p> -->
+				</div>
+			</div>
         </div>
+        <nav class="pagination" role="pagination">
+    
+    
+    <a class="pull-right" href="/2016/03/31/三月走了啊/">
+        三月走了啊 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+			
+<div class="ds-thread" data-thread-key="2016/04/22/数论函数一丢题解/" data-title="数论函数一丢题解" data-url="http://yoursite.com/2016/04/22/数论函数一丢题解/"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"wyxoi"};
+(function() {
+	var ds = document.createElement('script');
+	ds.type = 'text/javascript';ds.async = true;
+	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	ds.charset = 'UTF-8';
+	(document.getElementsByTagName('head')[0] 
+	 || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+
+		</div>
     </div>
 </section>
+
 
       
 <!-- ============================ Footer =========================== -->

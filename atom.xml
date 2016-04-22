@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-31T12:51:32.000Z</updated>
+  <updated>2016-04-22T12:10:58.117Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数论函数一丢题解</title>
+    <link href="http://yoursite.com/2016/04/22/%E6%95%B0%E8%AE%BA%E5%87%BD%E6%95%B0%E4%B8%80%E4%B8%A2%E9%A2%98%E8%A7%A3/"/>
+    <id>http://yoursite.com/2016/04/22/数论函数一丢题解/</id>
+    <published>2016-04-22T06:16:03.000Z</published>
+    <updated>2016-04-22T12:10:58.117Z</updated>
+    
+    <content type="html">&lt;p&gt;省选二试之前刷数论&lt;del&gt;(水)&lt;/del&gt;，来写一写题解。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;embed src=&quot;http://music.163.com/style/swf/widget.swf?sid=409872507&amp;type=2&amp;auto=0&amp;width=320&amp;height=66&quot; width=&quot;340&quot; height=&quot;86&quot; allownetworking=&quot;all&quot;&gt;Aimer女神的新歌，三天4000+的评论，期待完整版&lt;br&gt;突然想起来我是不是还有一个主席树的坑。。&lt;em&gt;(:з」∠)&lt;/em&gt; 。。算了不管他了。。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;BZOJ-2301-HAOI2011-Problem-b&quot;&gt;&lt;a href=&quot;#BZOJ-2301-HAOI2011-Problem-b&quot; class=&quot;headerlink&quot; title=&quot;BZOJ 2301: [HAOI2011]Problem b&quot;&gt;&lt;/a&gt;BZOJ 2301: [HAOI2011]Problem b&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http:\\www.lydsy.com/JudgeOnline/problem.php?id=2301&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;点击这里去虐题&lt;/a&gt;&lt;br&gt;题意要求$\sum_{i=a}^{b}\sum_{j=c}^{d}e(gcd(i,j)=k)$&lt;br&gt;首先我们可以利用容斥，将二维区间的询问改为四个二维前缀的询问。&lt;br&gt;然后显然的$\sum_{i=1}^{n}\sum_{j=1}^{m}e(gcd(i,j)=k)=\sum_{i=1}^{\lfloor\frac{n}{k}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{k}\rfloor}e(gcd(i,j))$&lt;br&gt;然后尝试化简&lt;br&gt;$$&lt;br&gt;\begin{align}&lt;br&gt;&amp;amp; \ \sum_{i=1}^{n}\sum_{j=1}^{m}e(gcd(i,j)) \\&lt;br&gt;= &amp;amp; \ \sum_{i=1}^{n}\sum_{j=1}^{m}\sum_{d|gcd(i,j)}\mu(d) \\&lt;br&gt;= &amp;amp; \ \sum_{d}\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{d}\rfloor}\mu(d) \\&lt;br&gt;= &amp;amp; \ \sum_{d}\mu(d)\lfloor\frac{n}{d}\rfloor\lfloor\frac{m}{d}\rfloor \\&lt;br&gt;\end{align}&lt;br&gt;$$&lt;br&gt;对于$\lfloor\frac{n}{d}\rfloor$的值，只有$\sqrt{n}$种，预处理莫比乌斯函数前缀和之后分段处理。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;BZOJ-2005-Noi2010-能量采集&quot;&gt;&lt;a href=&quot;#BZOJ-2005-Noi2010-能量采集&quot; class=&quot;headerlink&quot; title=&quot;BZOJ 2005: [Noi2010]能量采集&quot;&gt;&lt;/a&gt;BZOJ 2005: [Noi2010]能量采集&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://www.lydsy.com/JudgeOnline/problem.php?id=2005&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;点击这里去虐题&lt;/a&gt;&lt;br&gt;题意要求&lt;br&gt;$$&lt;br&gt;\begin{align}&lt;br&gt;&amp;amp; \ \sum_{i=1}^{n}\sum_{j=1}^{m}(gcd(i,j)*2-1) \\&lt;br&gt;= &amp;amp; \ 2*\sum_{i=1}^{n}\sum_{j=1}^{m}gcd(i,j)-n*m \\&lt;br&gt;\end{align}&lt;br&gt;$$&lt;br&gt;然后就如同上题一样求出$\sum_{i=1}^{n}\sum_{j=1}^{m}gcd(i,j)$即可&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;BZOJ-2820-YY的GCD&quot;&gt;&lt;a href=&quot;#BZOJ-2820-YY的GCD&quot; class=&quot;headerlink&quot; title=&quot;BZOJ 2820: YY的GCD&quot;&gt;&lt;/a&gt;BZOJ 2820: YY的GCD&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://www.lydsy.com/JudgeOnline/problem.php?id=2820&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;点击这里去虐题&lt;/a&gt;&lt;br&gt;题意要求$\sum_{i=1}^{n}\sum_{j=1}^{m}1(gcd(i,j)是质数)$&lt;br&gt;我们设$f(n)=&lt;br&gt;\begin{cases}&lt;br&gt;1\ \ \ n是质数 \\&lt;br&gt;0\ \ \ n不是质数 \\&lt;br&gt;\end{cases}&lt;br&gt;$&lt;br&gt;于是问题就变成了求$\sum_{i=1}^{n}\sum_{j=1}^{m}f(gcd(i,j))$了&lt;br&gt;$$&lt;br&gt;\begin{align}&lt;br&gt;&amp;amp; \ \sum_{i=1}^{n}\sum_{j=1}^{m}f(gcd(i,j)) \\&lt;br&gt;= &amp;amp; \ \sum_{d}\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{d}\rfloor}f(d)e(gcd(i,j)) \\&lt;br&gt;= &amp;amp; \ \sum_{d}f(d)\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{d}\rfloor}\sum_{d’|gcd(i,j)}\mu(d’) \\&lt;br&gt;= &amp;amp; \ \sum_{d}\sum_{d’}f(d)\mu(d’)\sum_{i=1}^{\lfloor\frac{n}{dd’}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{dd’}\rfloor} \\&lt;br&gt;= &amp;amp; \ \sum_{d}\sum_{d’}f(d)\mu(d’)\lfloor\frac{n}{dd’}\rfloor\lfloor\frac{m}{dd’}\rfloor \\&lt;br&gt;\end{align}&lt;br&gt;$$&lt;br&gt;设$g(n)=\sum_{d|n}f(d)\mu(\frac{n}{d})$&lt;br&gt;$$&lt;br&gt;\begin{align}&lt;br&gt;&amp;amp; \ \sum_{d}\sum_{d’}f(d)\mu(d’)\lfloor\frac{n}{dd’}\rfloor\lfloor\frac{m}{dd’}\rfloor \\&lt;br&gt;= &amp;amp; \ \sum_{i=1}^{n}g(i)\lfloor\frac{n}{i}\rfloor\lfloor\frac{m}{i}\rfloor \\&lt;br&gt;\end{align}&lt;br&gt;$$&lt;br&gt;然后与上题类似预处理g的前缀和，对函数分段计算。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;BZOJ-3309-DZY-Loves-Math&quot;&gt;&lt;a href=&quot;#BZOJ-3309-DZY-Loves-Math&quot; class=&quot;headerlink&quot; title=&quot;BZOJ 3309: DZY Loves Math&quot;&gt;&lt;/a&gt;BZOJ 3309: DZY Loves Math&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://www.lydsy.com/JudgeOnline/problem.php?id=3309&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;点击这里去虐题&lt;/a&gt;&lt;br&gt;将上题中的函数f的定义换一下就可以。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;BZOJ-2154-Crash的数字表格&quot;&gt;&lt;a href=&quot;#BZOJ-2154-Crash的数字表格&quot; class=&quot;headerlink&quot; title=&quot;BZOJ 2154: Crash的数字表格&quot;&gt;&lt;/a&gt;BZOJ 2154: Crash的数字表格&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://www.lydsy.com/JudgeOnline/problem.php?id=2154&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;点击这里去虐题&lt;/a&gt;&lt;br&gt;题意要求$\sum_{i=1}^{n}\sum_{j=1}^{m}lcm(i,j)$&lt;br&gt;尝试转化成枚举Gcd的形式&lt;br&gt;$$&lt;br&gt;\begin{align}&lt;br&gt;&amp;amp; \ \sum_{i=1}^{n}\sum_{j=1}^{m}\left(\frac{i*j}{gcd(i,j)}\right) \\&lt;br&gt;= &amp;amp; \ \sum_{d}\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{d}\rfloor}\left(\frac{id*jd}{d}\right)e(gcd(i,j)) \\&lt;br&gt;= &amp;amp; \ \sum_{d}d\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{d}\rfloor}i*j\sum_{d’|gcd(i,j)}\mu(d’) \\&lt;br&gt;= &amp;amp; \ \sum_{d}\sum_{d’}d*d’^2*\mu(d’)\sum_{i=1}^{\lfloor\frac{n}{dd’}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{dd’}\rfloor}i*j \\&lt;br&gt;\end{align}&lt;br&gt;$$&lt;br&gt;很显然的可以得到$\sum_{i=1}^{n}\sum_{j=1}^{m}i*j=\frac{1}{4}nm(n+1)(m+1)$&lt;br&gt;与上题类似地设$g(n)=\sum_{d|n}d^2*\mu(d)*\frac{n}{d}$&lt;br&gt;$$&lt;br&gt;\begin{align}&lt;br&gt;&amp;amp; \ \sum_{d}\sum_{d’}d*d’^2*\mu(d’)\sum_{i=1}^{\lfloor\frac{n}{dd’}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{dd’}\rfloor}i*j \\&lt;br&gt;= &amp;amp; \ \sum_{i}g(i)\sum_{i=1}^{\lfloor\frac{n}{i}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{i}\rfloor}i*j&lt;br&gt;\end{align}&lt;br&gt;$$&lt;br&gt;因为g是积性函数，所以可以做到$O(n)$预处理。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;BZOJ-2693-jzptab&quot;&gt;&lt;a href=&quot;#BZOJ-2693-jzptab&quot; class=&quot;headerlink&quot; title=&quot;BZOJ 2693: jzptab&quot;&gt;&lt;/a&gt;BZOJ 2693: jzptab&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://www.lydsy.com/JudgeOnline/problem.php?id=2693&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;点击这里去虐题&lt;/a&gt;&lt;br&gt;与上题相同，多组数据&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;BZOJ-3560-DZY-Loves-Math-V&quot;&gt;&lt;a href=&quot;#BZOJ-3560-DZY-Loves-Math-V&quot; class=&quot;headerlink&quot; title=&quot;BZOJ 3560: DZY Loves Math V&quot;&gt;&lt;/a&gt;BZOJ 3560: DZY Loves Math V&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://www.lydsy.com/JudgeOnline/problem.php?id=3560&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;点击这里去虐题&lt;/a&gt;&lt;br&gt;题意要求$\sum_{i_1|a_1}\sum_{i_2|a_2}\cdots\sum_{i_n|a_n}\varphi(i_{1}i_{2}\cdots i_n)$&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;省选二试之前刷数论&lt;del&gt;(水)&lt;/del&gt;，来写一写题解。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="题解" scheme="http://yoursite.com/categories/%E9%A2%98%E8%A7%A3/"/>
+    
+    
+      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
+    
+      <category term="数论" scheme="http://yoursite.com/tags/%E6%95%B0%E8%AE%BA/"/>
+    
+      <category term="数论函数" scheme="http://yoursite.com/tags/%E6%95%B0%E8%AE%BA%E5%87%BD%E6%95%B0/"/>
+    
+      <category term="杜教筛" scheme="http://yoursite.com/tags/%E6%9D%9C%E6%95%99%E7%AD%9B/"/>
+    
+  </entry>
   
   <entry>
     <title>三月走了啊</title>
