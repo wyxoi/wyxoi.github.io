@@ -347,7 +347,7 @@
 <li>交换律：$f*g=g*f$</li>
 <li>结合律：$(f*g)*h=f*(g*h)$</li>
 <li>分配律：$f*(g+h)=f*g+f*h$</li>
-<li>单位元：$\epsilon*f=f*\epsilon$</li>
+<li>单位元：$\epsilon*f=f$</li>
 <li>若$f,g$为积性函数，则$f*g$也为积性函数</li>
 </ul>
 <p><br><br><strong>一些常见的$Dirichlet$卷积：</strong></p>
@@ -365,7 +365,7 @@
 <h3 id="莫比乌斯反演"><a href="#莫比乌斯反演" class="headerlink" title="莫比乌斯反演"></a>莫比乌斯反演</h3><p><strong>莫比乌斯反演公式：</strong></p>
 <ul>
 <li>如果两个数论函数$f,g$满足$$f(n)=\sum_{d|n}g(d)$$</li>
-<li>则它们满足$$g(n)=\sum_{d|n}\mu(n)\cdot f(\frac{n}{d})$$</li>
+<li>则它们满足$$g(n)=\sum_{d|n}\mu(d)\cdot f(\frac{n}{d})$$</li>
 <li>反之亦然</li>
 <li>写成$Dirichlet$卷积形式为$f=g*1\Leftrightarrow g=\mu*f$</li>
 </ul>
@@ -398,9 +398,28 @@
 <p><a href="#menu">Back To Menu</a></p>
 <hr>
 <p><span id="jump_jixinghanshuqianzhuihe"> </span></p>
-<h3 id="一类积性函数求前缀和问题"><a href="#一类积性函数求前缀和问题" class="headerlink" title="一类积性函数求前缀和问题"></a>一类积性函数求前缀和问题</h3><p>我们知道一般的积性函数可以用欧拉筛$O(n)$求值，但是在一些题目里要求在低于线性的复杂度下求积性函数的前缀和。</p>
+<h3 id="一类积性函数求前缀和问题"><a href="#一类积性函数求前缀和问题" class="headerlink" title="一类积性函数求前缀和问题"></a>一类积性函数求前缀和问题</h3><p>4.22 这个坑不知道已经在这里多久了。。<em>(:з」∠)</em> 。。终于要来填掉了。。</p>
+<p>我们知道一般的积性函数可以用欧拉筛$O(n)$求值，但是在一些题目里要求在低于线性的复杂度下求积性函数的前缀和。这个时候我们就需要一种更加高效的求前缀和的算法。</p>
+<p>现在OI圈里比较常见的方法是杜教筛，可以做到在$O(n^{\frac{3}{4}})$或$O(n^{\frac{2}{3}})$的时间内求出积性函数的前缀和。</p>
+<p><br></p>
+<p><strong>杜教筛：</strong></p>
+<ul>
+<li>现在我们要求$S(n)=\sum_{i=1}^{n}f(i)$</li>
+<li>我们可以找出另一个函数g，然后考虑$(g*f)(n)$的前缀和<br>$$<br>\begin{align}<br>&amp;\ \sum_{i=1}^{n}(f*g)(i) \\<br>= &amp;\ \sum_{i=1}^{n}\sum_{j|i}f(j)g(\frac{i}{j}) \\<br>= &amp;\ \sum_{\frac{i}{j}}^{n}\sum_{j=1}^{\left\lfloor\cfrac{n}{\frac{i}{j}}\right\rfloor}f(j)g(\frac{i}{j}) \\<br>= &amp;\ \sum_{i=1}^{n}g(i)\sum_{j=1}^{\lfloor\frac{n}{i}\rfloor}f(j) \\<br>= &amp;\ \sum_{i=1}^{n}g(i)S(\lfloor\frac{n}{i}\rfloor) \\<br>\end{align}$$</li>
+<li>然后我们就可以得到一个关于$S(n)$的递推式$$g(1)S(n)=\sum_{i=1}^{n}(f*g)(i)-\sum_{i=2}^{n}g(i)S(\lfloor\frac{n}{i}\rfloor)$$</li>
+<li>所以如果我们可以快速的求出$g$和$(f*g)$的前缀和，那就可以用记忆化搜索做到$O(n^{\frac{3}{4}})$的复杂度。如果原函数也可以快速求前缀和，那我们可以预处理$\sqrt{n}$以内的结果，这样就可以做到$O(n^{\frac{2}{3}})$的复杂度.</li>
+<li>现在我们已经可以很轻松的求出简单的积性函数如$\varphi\ \mu$的前缀和了</li>
+<li>但是对于一些比较复杂的函数，想要找一个合适的g是比较困难的。对于较复杂的函数一般有两个比较基本的形式<ul>
+<li>求$S(n)=\sum_{i=1}^{n}(f*g)(i)$的值，$g(i)$为完全积性函数，这时有$$S(n)=\sum_{i=1}^{n}[(f*1)\cdot g](i)-\sum_{i=2}^{n}S(\lfloor\frac{n}{i}\rfloor)$$</li>
+<li>求$S(n)=\sum_{i=1}^{n}(f*g)(i)$的值，这时有$$S(n)=\sum_{i=1}^{n}g(i)\sum_{ij&lt;=n}(f*1)(j)-\sum_{i=2}^{n}S(\lfloor\frac{n}{i}\rfloor)$$</li>
+</ul>
+</li>
+<li>有了这些性质我们就可以较容易地求出积性函数的前缀和了</li>
+</ul>
+<p><br></p>
+<p><a href="#menu">Back To Menu</a></p>
 <hr>
-<p>有错误请指出$$\mathcal {Continue…}$$</p>
+<p>有错误请指出$$\mathcal {FIN.}$$</p>
 
             <div class="clearfix"></div>
             <hr class="nogutter">

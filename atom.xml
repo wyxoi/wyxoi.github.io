@@ -66,9 +66,9 @@
       <category term="笔记" scheme="http://yoursite.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="主席树" scheme="http://yoursite.com/tags/%E4%B8%BB%E5%B8%AD%E6%A0%91/"/>
-    
       <category term="笔记" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="主席树" scheme="http://yoursite.com/tags/%E4%B8%BB%E5%B8%AD%E6%A0%91/"/>
     
       <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
     
@@ -118,13 +118,13 @@
       <category term="笔记" scheme="http://yoursite.com/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="主席树" scheme="http://yoursite.com/tags/%E4%B8%BB%E5%B8%AD%E6%A0%91/"/>
-    
       <category term="笔记" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
+      <category term="主席树" scheme="http://yoursite.com/tags/%E4%B8%BB%E5%B8%AD%E6%A0%91/"/>
     
       <category term="坑" scheme="http://yoursite.com/tags/%E5%9D%91/"/>
+    
+      <category term="题解" scheme="http://yoursite.com/tags/%E9%A2%98%E8%A7%A3/"/>
     
   </entry>
   
@@ -133,7 +133,7 @@
     <link href="http://yoursite.com/2016/03/25/%E7%9C%81%E9%80%89%E6%95%B0%E8%AE%BA%E8%AE%B2%E8%AF%BE%E7%9A%84%E6%90%AC%E8%BF%90/"/>
     <id>http://yoursite.com/2016/03/25/省选数论讲课的搬运/</id>
     <published>2016-03-25T11:51:36.000Z</published>
-    <updated>2016-04-03T07:31:50.981Z</updated>
+    <updated>2016-04-22T06:03:20.692Z</updated>
     
     <content type="html">&lt;p&gt;感觉这次省选讲课里好像只有洲爷的课正常，于是就来写一写&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;embed src=&quot;http://music.163.com/style/swf/widget.swf?sid=28912021&amp;type=2&amp;auto=0&amp;width=320&amp;height=66&quot; width=&quot;340&quot; height=&quot;86&quot; allownetworking=&quot;all&quot;&gt;好像找不到歌了。。&lt;em&gt;(:з」∠)&lt;/em&gt;换一种风格的发发&lt;br&gt;突然想起来好像给初三讲数论函数的是我。。&lt;em&gt;(:з」∠)&lt;/em&gt;，我自己都不会怎么讲。要出事了。&lt;br&gt;以下内容中涉及函数均为数论函数，即定义域为正整数的函数。&lt;br&gt;以下内容纯属搬运与口胡，若有错误，欢迎指出&lt;del&gt;(请当做没看见)&lt;/del&gt;。&lt;/p&gt;
@@ -210,7 +210,7 @@
 &lt;li&gt;交换律：$f*g=g*f$&lt;/li&gt;
 &lt;li&gt;结合律：$(f*g)*h=f*(g*h)$&lt;/li&gt;
 &lt;li&gt;分配律：$f*(g+h)=f*g+f*h$&lt;/li&gt;
-&lt;li&gt;单位元：$\epsilon*f=f*\epsilon$&lt;/li&gt;
+&lt;li&gt;单位元：$\epsilon*f=f$&lt;/li&gt;
 &lt;li&gt;若$f,g$为积性函数，则$f*g$也为积性函数&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;strong&gt;一些常见的$Dirichlet$卷积：&lt;/strong&gt;&lt;/p&gt;
@@ -228,7 +228,7 @@
 &lt;h3 id=&quot;莫比乌斯反演&quot;&gt;&lt;a href=&quot;#莫比乌斯反演&quot; class=&quot;headerlink&quot; title=&quot;莫比乌斯反演&quot;&gt;&lt;/a&gt;莫比乌斯反演&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;莫比乌斯反演公式：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;如果两个数论函数$f,g$满足$$f(n)=\sum_{d|n}g(d)$$&lt;/li&gt;
-&lt;li&gt;则它们满足$$g(n)=\sum_{d|n}\mu(n)\cdot f(\frac{n}{d})$$&lt;/li&gt;
+&lt;li&gt;则它们满足$$g(n)=\sum_{d|n}\mu(d)\cdot f(\frac{n}{d})$$&lt;/li&gt;
 &lt;li&gt;反之亦然&lt;/li&gt;
 &lt;li&gt;写成$Dirichlet$卷积形式为$f=g*1\Leftrightarrow g=\mu*f$&lt;/li&gt;
 &lt;/ul&gt;
@@ -261,9 +261,28 @@
 &lt;p&gt;&lt;a href=&quot;#menu&quot;&gt;Back To Menu&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;span id=&quot;jump_jixinghanshuqianzhuihe&quot;&gt; &lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&quot;一类积性函数求前缀和问题&quot;&gt;&lt;a href=&quot;#一类积性函数求前缀和问题&quot; class=&quot;headerlink&quot; title=&quot;一类积性函数求前缀和问题&quot;&gt;&lt;/a&gt;一类积性函数求前缀和问题&lt;/h3&gt;&lt;p&gt;我们知道一般的积性函数可以用欧拉筛$O(n)$求值，但是在一些题目里要求在低于线性的复杂度下求积性函数的前缀和。&lt;/p&gt;
+&lt;h3 id=&quot;一类积性函数求前缀和问题&quot;&gt;&lt;a href=&quot;#一类积性函数求前缀和问题&quot; class=&quot;headerlink&quot; title=&quot;一类积性函数求前缀和问题&quot;&gt;&lt;/a&gt;一类积性函数求前缀和问题&lt;/h3&gt;&lt;p&gt;4.22 这个坑不知道已经在这里多久了。。&lt;em&gt;(:з」∠)&lt;/em&gt; 。。终于要来填掉了。。&lt;/p&gt;
+&lt;p&gt;我们知道一般的积性函数可以用欧拉筛$O(n)$求值，但是在一些题目里要求在低于线性的复杂度下求积性函数的前缀和。这个时候我们就需要一种更加高效的求前缀和的算法。&lt;/p&gt;
+&lt;p&gt;现在OI圈里比较常见的方法是杜教筛，可以做到在$O(n^{\frac{3}{4}})$或$O(n^{\frac{2}{3}})$的时间内求出积性函数的前缀和。&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;杜教筛：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;现在我们要求$S(n)=\sum_{i=1}^{n}f(i)$&lt;/li&gt;
+&lt;li&gt;我们可以找出另一个函数g，然后考虑$(g*f)(n)$的前缀和&lt;br&gt;$$&lt;br&gt;\begin{align}&lt;br&gt;&amp;amp;\ \sum_{i=1}^{n}(f*g)(i) \\&lt;br&gt;= &amp;amp;\ \sum_{i=1}^{n}\sum_{j|i}f(j)g(\frac{i}{j}) \\&lt;br&gt;= &amp;amp;\ \sum_{\frac{i}{j}}^{n}\sum_{j=1}^{\left\lfloor\cfrac{n}{\frac{i}{j}}\right\rfloor}f(j)g(\frac{i}{j}) \\&lt;br&gt;= &amp;amp;\ \sum_{i=1}^{n}g(i)\sum_{j=1}^{\lfloor\frac{n}{i}\rfloor}f(j) \\&lt;br&gt;= &amp;amp;\ \sum_{i=1}^{n}g(i)S(\lfloor\frac{n}{i}\rfloor) \\&lt;br&gt;\end{align}$$&lt;/li&gt;
+&lt;li&gt;然后我们就可以得到一个关于$S(n)$的递推式$$g(1)S(n)=\sum_{i=1}^{n}(f*g)(i)-\sum_{i=2}^{n}g(i)S(\lfloor\frac{n}{i}\rfloor)$$&lt;/li&gt;
+&lt;li&gt;所以如果我们可以快速的求出$g$和$(f*g)$的前缀和，那就可以用记忆化搜索做到$O(n^{\frac{3}{4}})$的复杂度。如果原函数也可以快速求前缀和，那我们可以预处理$\sqrt{n}$以内的结果，这样就可以做到$O(n^{\frac{2}{3}})$的复杂度.&lt;/li&gt;
+&lt;li&gt;现在我们已经可以很轻松的求出简单的积性函数如$\varphi\ \mu$的前缀和了&lt;/li&gt;
+&lt;li&gt;但是对于一些比较复杂的函数，想要找一个合适的g是比较困难的。对于较复杂的函数一般有两个比较基本的形式&lt;ul&gt;
+&lt;li&gt;求$S(n)=\sum_{i=1}^{n}(f*g)(i)$的值，$g(i)$为完全积性函数，这时有$$S(n)=\sum_{i=1}^{n}[(f*1)\cdot g](i)-\sum_{i=2}^{n}S(\lfloor\frac{n}{i}\rfloor)$$&lt;/li&gt;
+&lt;li&gt;求$S(n)=\sum_{i=1}^{n}(f*g)(i)$的值，这时有$$S(n)=\sum_{i=1}^{n}g(i)\sum_{ij&amp;lt;=n}(f*1)(j)-\sum_{i=2}^{n}S(\lfloor\frac{n}{i}\rfloor)$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;有了这些性质我们就可以较容易地求出积性函数的前缀和了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;#menu&quot;&gt;Back To Menu&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;有错误请指出$$\mathcal {Continue…}$$&lt;/p&gt;
+&lt;p&gt;有错误请指出$$\mathcal {FIN.}$$&lt;/p&gt;
 </content>
     
     <summary type="html">
