@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-22T12:10:58.117Z</updated>
+  <updated>2016-04-24T12:42:35.999Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2016/04/22/%E6%95%B0%E8%AE%BA%E5%87%BD%E6%95%B0%E4%B8%80%E4%B8%A2%E9%A2%98%E8%A7%A3/"/>
     <id>http://yoursite.com/2016/04/22/数论函数一丢题解/</id>
     <published>2016-04-22T06:16:03.000Z</published>
-    <updated>2016-04-22T12:10:58.117Z</updated>
+    <updated>2016-04-24T12:42:35.999Z</updated>
     
     <content type="html">&lt;p&gt;省选二试之前刷数论&lt;del&gt;(水)&lt;/del&gt;，来写一写题解。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;embed src=&quot;http://music.163.com/style/swf/widget.swf?sid=409872507&amp;type=2&amp;auto=0&amp;width=320&amp;height=66&quot; width=&quot;340&quot; height=&quot;86&quot; allownetworking=&quot;all&quot;&gt;Aimer女神的新歌，三天4000+的评论，期待完整版&lt;br&gt;突然想起来我是不是还有一个主席树的坑。。&lt;em&gt;(:з」∠)&lt;/em&gt; 。。算了不管他了。。&lt;/p&gt;
@@ -37,7 +37,13 @@
 &lt;hr&gt;
 &lt;h3 id=&quot;BZOJ-2693-jzptab&quot;&gt;&lt;a href=&quot;#BZOJ-2693-jzptab&quot; class=&quot;headerlink&quot; title=&quot;BZOJ 2693: jzptab&quot;&gt;&lt;/a&gt;BZOJ 2693: jzptab&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://www.lydsy.com/JudgeOnline/problem.php?id=2693&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;点击这里去虐题&lt;/a&gt;&lt;br&gt;与上题相同，多组数据&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&quot;BZOJ-3560-DZY-Loves-Math-V&quot;&gt;&lt;a href=&quot;#BZOJ-3560-DZY-Loves-Math-V&quot; class=&quot;headerlink&quot; title=&quot;BZOJ 3560: DZY Loves Math V&quot;&gt;&lt;/a&gt;BZOJ 3560: DZY Loves Math V&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://www.lydsy.com/JudgeOnline/problem.php?id=3560&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;点击这里去虐题&lt;/a&gt;&lt;br&gt;题意要求$\sum_{i_1|a_1}\sum_{i_2|a_2}\cdots\sum_{i_n|a_n}\varphi(i_{1}i_{2}\cdots i_n)$&lt;/p&gt;
+&lt;h3 id=&quot;BZOJ-3560-DZY-Loves-Math-V&quot;&gt;&lt;a href=&quot;#BZOJ-3560-DZY-Loves-Math-V&quot; class=&quot;headerlink&quot; title=&quot;BZOJ 3560: DZY Loves Math V&quot;&gt;&lt;/a&gt;BZOJ 3560: DZY Loves Math V&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://www.lydsy.com/JudgeOnline/problem.php?id=3560&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;点击这里去虐题&lt;/a&gt;&lt;br&gt;题意要求$\sum_{i_1|a_1}\sum_{i_2|a_2}\cdots\sum_{i_n|a_n}\varphi(i_{1}i_{2}\cdots i_n)$&lt;br&gt;我们知道$\varphi$是一个积性函数，考虑通过积性函数的性质进行计算&lt;br&gt;考虑分解质因子计算，求出每一种质因子的$\varphi$值即可，先计算出所有的组合情况&lt;br&gt;设$q_i$为$p$因子在$a_i$中出现的次数，那么就是要求$$sum=\prod_{i=1}^{n}\sum_{k=0}^{q_i}p_i$$&lt;br&gt;只有不含$p$因子的那一项不乘$\frac{p-1}{p}$，单独处理即可，易得对答案的贡献为$$\frac{p-1}{p}(sum-1)+1$$&lt;br&gt;当$a_i$较大的时候需要使用rho等高效的分解质因数方法。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;BZOJ-3561-DZY-Loves-Math-VI&quot;&gt;&lt;a href=&quot;#BZOJ-3561-DZY-Loves-Math-VI&quot; class=&quot;headerlink&quot; title=&quot;BZOJ 3561: DZY Loves Math VI&quot;&gt;&lt;/a&gt;BZOJ 3561: DZY Loves Math VI&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://www.lydsy.com/JudgeOnline/problem.php?id=3561&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;点击这里去虐题&lt;/a&gt;&lt;br&gt;题意要求$$\sum_{i=1}^{n}\sum_{j=1}^{m}lcm(i,j)^{gcd(i,j)}$$&lt;br&gt;考虑改为枚举gcd的形式&lt;br&gt;$$&lt;br&gt;\begin{align}&lt;br&gt;&amp;amp; \ \sum_{i=1}^{n}\sum_{j=1}^{m}(\frac{i*j}{gcd(i,j)})^{gcd(i,j)} \\&lt;br&gt;= &amp;amp; \ \sum_{d}\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{d}\rfloor}(\frac{id*jd}{d})^{d}e(gcd(i,j)) \\&lt;br&gt;= &amp;amp; \ \sum_{d}d^{d}\sum_{i=1}^{\lfloor\frac{n}{d}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{d}\rfloor}(i*j)^{d}\sum_{d’|gcd(i,j)}\mu(d’) \\&lt;br&gt;= &amp;amp; \ \sum_{d}d^{d}\sum_{d’}\mu(d’)\sum_{i=1}^{\lfloor\frac{n}{dd’}\rfloor}\sum_{j=1}^{\lfloor\frac{m}{dd’}\rfloor}(id’*jd’)^{d} \\&lt;br&gt;= &amp;amp; \ \sum_{d}d^{d}\sum_{d’}\mu(d’)d’^{2d’}\sum_{i=1}^{\lfloor\frac{n}{dd’}\rfloor}i^d\sum_{j=1}^{\lfloor\frac{m}{dd’}\rfloor}j^d \\&lt;br&gt;\end{align}&lt;br&gt;$$&lt;br&gt;对于每一个$d$暴力维护一下$\sum_{d’}\mu(d’)d’^{2d’}$和$\sum_{i=1}^{\lfloor\frac{n}{dd’}\rfloor}i^d$即可&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;BZOJ-3739-DZY-loves-math-VIII&quot;&gt;&lt;a href=&quot;#BZOJ-3739-DZY-loves-math-VIII&quot; class=&quot;headerlink&quot; title=&quot;BZOJ 3739: DZY loves math VIII&quot;&gt;&lt;/a&gt;BZOJ 3739: DZY loves math VIII&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://www.lydsy.com/JudgeOnline/problem.php?id=3739&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;点击这里去虐题&lt;/a&gt;&lt;br&gt;题意要求$$\sum_{i=1}^{n}\sum_{j=1}^{i}\mu(lcm(i,j)^{gcd(i,j)})$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;有错误请指出$$Continue…$$&lt;/p&gt;
 </content>
     
     <summary type="html">
